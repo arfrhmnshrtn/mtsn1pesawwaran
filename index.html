@@ -6,8 +6,8 @@
     <title>Mtsn 1 Pesawaran</title>
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./css/navbar.css" />
-    <link rel="stylesheet" href="./css/swiper_content.css" />
+    <link rel="stylesheet" href="./src/css/navbar.css" />
+    <link rel="stylesheet" href="./src/css/swiper_content.css" />
 
     <!-- font awesome -->
     <link
@@ -17,7 +17,7 @@
   </head>
   <body>
     <main>
-      <header>
+      <!-- <header>
         <div class="container navbar-container">
           <div class="logo-container">
             <div class="logo">
@@ -80,7 +80,8 @@
             </ul>
           </div>
         </div>
-      </header>
+      </header> -->
+      <div id="navbar"></div>
       <div class="swiper-container">
         <div class="content">
           <p>Selamat Datang di Website</p>
@@ -90,12 +91,20 @@
           <a href="">Lihat Profil</a>
         </div>
 
-        <div class="vertical-info">
-        </div>
+        <div class="vertical-info"></div>
       </div>
     </main>
 
     <!-- js -->
-    <script src="./js/index.js"></script>
+    <!-- <script src="./src/js/index.js"></script> -->
+    <script>
+      // Load navbar
+      fetch("./src/components/navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading navbar:", error));
+    </script>
   </body>
 </html>
