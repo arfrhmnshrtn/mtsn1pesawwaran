@@ -1,0 +1,3 @@
+- Arief = beranda, profil,
+- Geevan = Berita, sertifikasi
+- Panji = Galeri, ppdb, kontak
