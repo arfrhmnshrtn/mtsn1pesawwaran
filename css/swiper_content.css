@@ -1,0 +1,84 @@
+.swiper-container {
+  position: relative;
+  height: 100vh;
+  background: url("../img/bg-home.jpg") center/cover no-repeat;
+}
+
+.swiper-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.swiper-container .content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container .content {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  margin-left: 150px;
+  color: white;
+  text-align: left;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1;
+  z-index: 999;
+}
+
+.swiper-container .content h1 {
+  font-size: 70px;
+  font-weight: bold;
+  color: rgb(240, 85, 29);
+  margin-top: 20px;
+  font-style: normal;
+  /* margin: 20px 0; */
+}
+
+.swiper-container .content h2 {
+  font-size: 35px;
+  font-weight: 200;
+  color: white;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  font-style: normal;
+}
+
+.swiper-container .content a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: green;
+  border: 1px solid orangered;
+  color: white;
+  font-style: normal;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.vertical-info::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  width: 1px;
+  height: 30vh;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.vertical-info::after {
+  content: "Ikuti Kami";
+  position: absolute;
+  top: 40%;
+  left: 0;
+  color: white;
+
+  transform: rotate(-90deg);
+  /* transform-origin: right top; */
+}
