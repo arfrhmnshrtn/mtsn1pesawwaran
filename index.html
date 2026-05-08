@@ -7,7 +7,15 @@
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./src/css/navbar.css" />
-    <link rel="stylesheet" href="./src/css/swiper_content.css" />
+    <link rel="stylesheet" href="./src/css/index.css" />
+
+    <!-- tailwind -->
+
+    <!-- icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <!-- font awesome -->
     <link
@@ -17,7 +25,7 @@
   </head>
   <body>
     <main>
-      <!-- <header>
+      <header>
         <div class="container navbar-container">
           <div class="logo-container">
             <div class="logo">
@@ -80,31 +88,110 @@
             </ul>
           </div>
         </div>
-      </header> -->
+      </header>
       <div id="navbar"></div>
       <div class="swiper-container">
-        <div class="content">
-          <p>Selamat Datang di Website</p>
-          <h1>MTSN 1</h1>
-          <h2>Pesawaran</h2>
+        <div class="overlay"></div>
 
-          <a href="">Lihat Profil</a>
+        <!-- Vertical Social -->
+        <div class="vertical-social">
+          <span>IKUTI KAMI</span>
+
+          <div class="line"></div>
+
+          <div class="social-icons">
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-youtube"></i></a>
+          </div>
         </div>
 
-        <div class="vertical-info"></div>
+        <!-- Content -->
+        <div class="content">
+          <p>Selamat Datang Di Website</p>
+
+          <h1>MTSN 1</h1>
+
+          <h2>Pesawaran</h2>
+
+          <a href="#">Lihat Profil</a>
+        </div>
+
+        <!-- Slider Counter -->
+        <div class="slider-counter">
+          <div class="counter-line"></div>
+
+          <div class="counter-text">
+            <span class="active">1</span>
+            <span>/1</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- sambutan -->
+      <div class="sambutan-container">
+        <div class="child">
+          <div class="left">
+            <h1>Sambutan Kepala Madrasah</h1>
+            <p>
+              Assalamu'alaikum wr.wb. Puji dan syukur marilah kita panjatkan ke
+              hadirat Ilahi Rabbi, atas karunia-Nya kita senantiasa diberikan
+              kesempatan dalam rangka thalabul ilmi, mencari ilmu. Mudah-mudaham
+              setiap derap langkah bisa membuahkan pahala bagi kita semua,
+              menjadi penghapus dosa dan pengangkat derajat di hadapan Allah
+              SWT. Tak lupa semoga shalawat serta salam senantiasa tercurah
+              kepada junjungan kita Nabi Muhammad Saw, kepada keluarganya,
+              sahabatnya, yang menjadi suri tauladan bagi seluruh umatnya hingga
+              akhir zaman. Madrasah merupakan lembaga yang membekali siswa
+              dengan pendidikan formal dan pengetahuan agama untuk membentuk
+              karakter siswa yang cerdas, beriman, dan bertaqwa. Seiring dengan
+              perkembangan zaman, selain pendidikan islam, madrasah mulai
+              dilengkapi penguasaan teknologi informasi dan ketrampilan modern.
+              Untuk itu, madrasah memiliki peranan penting dalam masyarakat guna
+              mendukung peningkatan kualitas sumber daya manusia. Sesuai dengan
+              visi misinya, Madrasah Tsanawiyah Negeri 1 Pesawaran berusaha
+              menciptakan generasi yang SEHAT, UNGGUL, KREATIF DAN AGAMIS
+              (SUKA), berkompeten dalam bidang IPTEK, dan memiliki ketrampilan
+              diri. Tersedianya pembelajaran keagamaan yang lebih intens menjadi
+              bekal siswa agar tidak hanya cerdas namun juga santun dan
+              religius. Selain itu, MTsN 1 Pesawaran memfasilitasi siswa dengan
+              keterampilan sesuai minat dan bakatnya, diantaranya tahfidz,
+              kesenian (tari), tartil qur'an, drum band, dsb. Dengan demikian
+              lulusan MTsN 1 Pesawaran menjadi generasi yang cerdas, beriman,
+              dan memiliki skill yang baik dalam bidangnya. Untuk kemajuan
+              pendidikan, saya mengajak putra-putri penerus bangsa agar
+              bergabung dengan madrasah. Marilah bersama-sama berinovasi dan
+              belajar dengan semangat demi terwujudnya generasi cerdas, santun,
+              religius dan memiliki keterampilan diri. Kritik dan saran juga
+              senantiasa diharapkan demi membangun madrasah yang lebih baik.
+              Wassalamu'alaikum wr. wb.
+            </p>
+          </div>
+          <div class="right">
+            <img src="./src/img/kepsek.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- akhir sambutan -->
+
+      <!-- smart school -->
+      <div class="smart-school">
+        <h3>Smart School Apps MTS Negeri 1 Pesawaran</h3>
+        <div class="contain">
+          <div class="card">
+            <h4>Selaksa Pemikat</h4>
+            <p>Sistem Layanan Konsultasi Potensi Minat dan Bakat</p>
+          </div>
+          <div class="card">
+            <h4>RDM</h4>
+            <p>Rapor Digital Madrasah</p>
+          </div>
+        </div>
       </div>
     </main>
 
     <!-- js -->
-    <!-- <script src="./src/js/index.js"></script> -->
-    <script>
-      // Load navbar
-      fetch("./src/components/navbar.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("navbar").innerHTML = data;
-        })
-        .catch((error) => console.error("Error loading navbar:", error));
-    </script>
+    <script src="./src/js/index.js"></script>
   </body>
 </html>
