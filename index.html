@@ -17,7 +17,7 @@
   </head>
   <body>
     <main>
-      <!-- <header>
+      <header>
         <div class="container navbar-container">
           <div class="logo-container">
             <div class="logo">
@@ -49,9 +49,9 @@
               </div>
 
               <div class="dropdown">
-                <li><a href="#">Berita</a></li>
+                <li><a href="berita.html">Berita</a></li>
                 <div class="dropdown-content">
-                  <a href="#">Berita</a>
+                  <a href="berita.html">Berita</a>
                   <a href="#">Pengumuman</a>
                   <a href="#">Ekstrakurikuler</a>
                   <a href="#">Prestasi</a>
@@ -63,8 +63,8 @@
               <div class="dropdown">
                 <li><a href="#">Sertifikasi Akreditasi</a></li>
                 <div class="dropdown-content">
-                  <a href="#">S.A. 2019-2024</a>
-                  <a href="#">S.A. 2024-2029</a>
+                  <a href="https://drive.google.com/file/d/1xxnYGVyeWu2U4i3UZnrBHEpFYEshY3aA/view?usp=sharing">S.A. 2019-2024</a>
+                  <a href="https://drive.google.com/file/d/12yPRJ8OxWpkmpJR3eQBqy7cBieBxNZf5/view?usp=sharing">S.A. 2024-2029</a>
                 </div>
               </div>
               <div class="dropdown">
@@ -80,7 +80,7 @@
             </ul>
           </div>
         </div>
-      </header> -->
+      </header>
       <div id="navbar"></div>
       <div class="swiper-container">
         <div class="content">
@@ -97,14 +97,6 @@
 
     <!-- js -->
     <!-- <script src="./src/js/index.js"></script> -->
-    <script>
-      // Load navbar
-      fetch("./src/components/navbar.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("navbar").innerHTML = data;
-        })
-        .catch((error) => console.error("Error loading navbar:", error));
-    </script>
+      
   </body>
 </html>
