@@ -9,15 +9,13 @@
     <link rel="stylesheet" href="./src/css/navbar.css" />
     
     <link rel="stylesheet" href="./src/css/berita.css" /> 
+    <link rel="stylesheet" href="./src/css/footer.css" />
 
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 <body>
-
-    <div id="navbar"></div>
-
     <main>
         <header>
             <div class="container navbar-container">
@@ -40,7 +38,7 @@
 
             <div class="nav-links">
                 <ul>
-                <li><a href="#">Beranda</a></li>
+                <li><a href="index.html">Beranda</a></li>
                 <div class="dropdown">
                     <li><a href="#">Profil</a></li>
                     <div class="dropdown-content">
@@ -83,6 +81,7 @@
             </div>
             </div>
         </header>
+        <div id="navbar"></div>
         
         <section class="hero-berita">
             <div class="hero-overlay"></div>
@@ -105,7 +104,7 @@
                 </article>
 
                 <article class="news-card">
-                    <img src="https://via.placeholder.com/250x150" alt="Tim Futsal" class="news-img">
+                    <img src="src/img/news2.jpeg" alt="Tim Futsal" class="news-img">
                     <div class="news-info">
                         <h3 class="news-title">Tampil Impresif, Tim Futsal Primavera MTsN 1 Pesawaran Rengkuh Juara Regional Lampung</h3>
                         <p class="news-meta">juara</p>
@@ -137,8 +136,58 @@
                 <button class="btn-load-more">Load More</button>
             </div>
         </section>
+
+        <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+            <div class="logo">
+                <img src="https://www.mtsn1pesawaran.sch.id/assets/images/logo.png" alt="Logo MTsN 1 Pesawaran" />
+                <div class="text">
+                <h1>MTS NEGERI 1</h1>
+                <h1 class="green-text">PESAWARAN</h1>
+                </div>
+            </div>
+            <p>Website Resmi MTsN 1 Pesawaran</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            </div>
+
+            <div class="footer-menu">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="#">Profil</a></li>
+                <li><a href="#">Berita</a></li>
+                <li><a href="#">Sertifikat Akreditasi</a></li>
+                <li><a href="galeri.html" class="active">Galeri</a></li>
+                <li><a href="#">PPDB</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-contact">
+            <h3>Kontak Kami</h3>
+            <ul>
+                <li><i class="fas fa-phone"></i> (0729)</li>
+                <li><i class="fas fa-envelope"></i> admin@mtsn1pesawaran.sch.id</li>
+                <li><i class="fas fa-map-marker-alt"></i> Jalan Pesawaran</li>
+            </ul>
+            </div>
+        </div>
+        </div>
+        </footer>
+        <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2024 MTsN 1 Pesawaran</p>
+        </div>
+        </div>
     </main>
 
+    <script src="./src/js/index.js"></script>
     <script>
         // Pastikan jalur ini benar: ./src/components/navbar.html
         fetch("./src/components/navbar.html")
