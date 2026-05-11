@@ -6,22 +6,90 @@
     <title>Berita - MTsN 1 Pesawaran</title>
 
     <link rel="stylesheet" href="style.css" />
-    
     <link rel="stylesheet" href="./src/css/navbar.css" />
-    <link rel="stylesheet" href="./src/css/berita.css" /> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    
+    <link rel="stylesheet" href="./src/css/berita.css" /> 
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 <body>
 
     <div id="navbar"></div>
 
     <main>
+        <header>
+            <div class="container navbar-container">
+            <div class="logo-container">
+                <div class="logo">
+                <img
+                    src="https://www.mtsn1pesawaran.sch.id/assets/images/logo.png"
+                    alt=""
+                />
+                <div class="text">
+                    <h1>MTS Negri 1</h1>
+                    <h1>Pesawaran</h1>
+                </div>
+                </div>
+
+                <div id="humberger-menu">
+                <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="nav-links">
+                <ul>
+                <li><a href="#">Beranda</a></li>
+                <div class="dropdown">
+                    <li><a href="#">Profil</a></li>
+                    <div class="dropdown-content">
+                    <a href="#">Sejarah</a>
+                    <a href="#">Visi & Misi</a>
+                    <a href="#">Struktur Organisasi</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <li><a href="berita.html">Berita</a></li>
+                    <div class="dropdown-content">
+                    <a href="berita.html">Berita</a>
+                    <a href="#">Pengumuman</a>
+                    <a href="#">Ekstrakurikuler</a>
+                    <a href="#">Prestasi</a>
+                    <a href="#">Kurikulum</a>
+                    <a href="#">Kalender Pendidikan</a>
+                    <a href="#">Jadwal Pembelajaran</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a href="#">Sertifikasi Akreditasi</a></li>
+                    <div class="dropdown-content">
+                    <a href="https://drive.google.com/file/d/1xxnYGVyeWu2U4i3UZnrBHEpFYEshY3aA/view?usp=sharing">S.A. 2019-2024</a>
+                    <a href="https://drive.google.com/file/d/12yPRJ8OxWpkmpJR3eQBqy7cBieBxNZf5/view?usp=sharing">S.A. 2024-2029</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a href="#">Galeri</a></li>
+                    <div class="dropdown-content">
+                    <a href="#">Foto</a>
+                    <a href="#">Video</a>
+                    </div>
+                </div>
+
+                <li><a href="#">PPDB</a></li>
+                <li><a href="#">Kontak</a></li>
+                </ul>
+            </div>
+            </div>
+        </header>
+        
         <section class="hero-berita">
             <div class="hero-overlay"></div>
             <div class="container hero-content">
                 <h1 class="page-title">Berita</h1>
                 <p class="breadcrumb">Home / Berita</p>
             </div>
-            <div class="hero-border-bottom"></div>
         </section>
 
         <section class="container news-section">
@@ -72,22 +140,28 @@
     </main>
 
     <script>
+        // Pastikan jalur ini benar: ./src/components/navbar.html
         fetch("./src/components/navbar.html")
-            .then((response) => response.text())
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("Gagal mengambil file navbar.html");
+                }
+                return response.text();
+            })
             .then((data) => {
                 document.getElementById("navbar").innerHTML = data;
                 
-                // Trik kecil agar menu 'Berita' otomatis mendapat class active
-                setTimeout(() => {
-                    const links = document.querySelectorAll('.nav-links ul li a');
-                    links.forEach(link => {
-                        if(link.textContent.trim() === 'Berita') {
-                            link.style.color = 'rgb(232, 115, 73)'; // Warna orange
-                        }
-                    });
-                }, 100);
+                // Tambahkan logika scroll milik Arief di sini
+                const navbarContainer = document.querySelector('.navbar-container');
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 50) {
+                        navbarContainer.classList.add('scrolled');
+                    } else {
+                        navbarContainer.classList.remove('scrolled');
+                    }
+                });
             })
-            .catch((error) => console.error("Error loading navbar:", error));
+            .catch((error) => console.error("Error:", error));
     </script>
 </body>
 </html>
