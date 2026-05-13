@@ -1,0 +1,166 @@
+/* =========================================
+   STYLE 100% MIRIP DATATABLES 
+========================================= */
+
+.kurikulum-section {
+    padding: 50px 20px;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.dt-container {
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+}
+
+/* --- TOP (Length & Search) --- */
+.dt-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.dt-length select {
+    padding: 4px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    background-color: transparent;
+    margin: 0 4px;
+    outline: none;
+}
+
+.dt-search input {
+    padding: 4px 6px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    margin-left: 5px;
+    outline: none;
+}
+
+/* --- TABEL UTAMA --- */
+.dt-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.dt-table th {
+    border-bottom: 1px solid #111;
+    padding: 10px 18px;
+    text-align: left;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+}
+
+.dt-table th .sort-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.3;
+    font-size: 12px;
+}
+
+.dt-table td {
+    padding: 10px 18px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dt-table tbody tr {
+    background-color: #f9f9f9; /* Background abu-abu muda 100% mirip gambar */
+}
+
+/* --- TOMBOL LIHAT --- */
+.btn-lihat {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background-color: #0d6efd;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.btn-lihat:hover { background-color: #0b5ed7; }
+
+/* --- BOTTOM (Info & Pagination) --- */
+.dt-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.dt-info {
+    color: #333;
+}
+
+.dt-pagination {
+    display: flex;
+}
+
+.paginate_button {
+    padding: 5px 12px;
+    margin-left: -1px; /* Trik agar border menyatu tanpa celah */
+    border: 1px solid #dee2e6;
+    background-color: white;
+    color: #0d6efd;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.paginate_button.previous { border-top-left-radius: 4px; border-bottom-left-radius: 4px; }
+.paginate_button.next { border-top-right-radius: 4px; border-bottom-right-radius: 4px; }
+
+.paginate_button.current {
+    background-color: #0d6efd;
+    color: white;
+    border-color: #0d6efd;
+    z-index: 1;
+}
+
+.paginate_button.disabled {
+    color: #6c757d;
+    background-color: #e9ecef;
+    pointer-events: none;
+}
+
+/* --- TOMBOL SHARE (Sangat Kecil) --- */
+.share-widgets {
+    display: flex;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.share-btn.fb { background-color: #1877f2; }
+.share-btn.tw { background-color: #1da1f2; }
+.share-btn.wa { background-color: #25d366; }
+
+@media screen and (max-width: 600px) {
+    .dt-top, .dt-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
