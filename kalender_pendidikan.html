@@ -3,37 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pengumuman - MTsN 1 Pesawaran</title>
+    <title>Kalender Pendidikan - MTsN 1 Pesawaran</title>
 
-    <!-- Pastikan path CSS ini sesuai dengan struktur foldermu -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./src/css/navbar.css" />
-    <link rel="stylesheet" href="./src/css/berita.css" /> 
+    <link rel="stylesheet" href="./src/css/berita.css" />
+    <!-- Kita pakai ulang CSS Kurikulum karena desain tabelnya 100% sama -->
+    <link rel="stylesheet" href="./src/css/kurikulum.css" /> 
     <link rel="stylesheet" href="./src/css/footer.css" />
-    <link rel="stylesheet" href="./src/css/pengumuman.css" />
-    <!-- Boxicons -->
+
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 <body>
     <main>
-        <!-- NAVBAR MANUAL -->
+        <!-- NAVBAR -->
         <header>
             <div class="container navbar-container">
                 <div class="logo-container">
                     <div class="logo">
-                        <img src="https://www.mtsn1pesawaran.sch.id/assets/images/logo.png" alt="Logo MTsN 1 Pesawaran"/>
+                        <img src="https://www.mtsn1pesawaran.sch.id/assets/images/logo.png" alt=""/>
                         <div class="text">
                             <h1>MTS Negri 1</h1>
                             <h1>Pesawaran</h1>
                         </div>
                     </div>
-                    <div id="humberger-menu">
-                        <i class="fas fa-bars"></i>
-                    </div>
+                    <div id="humberger-menu"><i class="fas fa-bars"></i></div>
                 </div>
-
                 <div class="nav-links">
                     <ul>
                         <li><a href="index.html">Beranda</a></li>
@@ -45,7 +41,6 @@
                                 <a href="#">Struktur Organisasi</a>
                             </div>
                         </div>
-
                         <div class="dropdown">
                             <li><a href="berita.html">Berita</a></li>
                             <div class="dropdown-content">
@@ -72,7 +67,6 @@
                                 <a href="#">Video</a>
                             </div>
                         </div>
-
                         <li><a href="#">PPDB</a></li>
                         <li><a href="#">Kontak</a></li>
                     </ul>
@@ -80,75 +74,73 @@
             </div>
         </header>
         
-        <!-- Bagian Hero (Gambar Atas) -->
+        <!-- HERO -->
         <section class="hero-berita">
             <div class="hero-overlay"></div>
             <div class="container hero-content">
-                <h1 class="page-title">Pengumuman</h1>
-                <p class="breadcrumb">Home / Pengumuman</p>
+                <h1 class="page-title">Kalender Pendidikan</h1>
+                <p class="breadcrumb">Home / Kalender Pendidikan</p>
             </div>
         </section>
 
-        <!-- Bagian Daftar Pengumuman -->
-        <section class="container">
-            <div class="announcement-list">
+        <!-- TABEL KALENDER PENDIDIKAN -->
+        <section class="container kurikulum-section">
+            <div class="dt-container">
                 
-                <!-- ITEM 1 -->
-                <div class="announcement-card">
-                    <div class="announcement-date">
-                        <div class="corner"></div>
-                        <h2>19</h2>
-                        <p>NOV</p>
-                        <span>25</span>
+                <div class="dt-top">
+                    <div class="dt-length">
+                        Tampilkan 
+                        <select>
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select> 
+                        entri
                     </div>
-                    <div class="announcement-content">
-                        <h3>PENGAMBILAN IJAZAH</h3>
-                        <p>Ijazah</p>
-                        <a href="#">Selengkapnya <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <!-- ITEM 2 -->
-                <div class="announcement-card">
-                    <div class="announcement-date">
-                        <div class="corner"></div>
-                        <h2>04</h2>
-                        <p>NOV</p>
-                        <span>25</span>
-                    </div>
-                    <div class="announcement-content">
-                        <h3>Info Sidik Jari Ijazah</h3>
-                        <p>INFO SIDIK JARI</p>
-                        <a href="#">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    <div class="dt-search">
+                        Cari: <input type="text">
                     </div>
                 </div>
 
-                <!-- ITEM 3 -->
-                <div class="announcement-card">
-                    <div class="announcement-date">
-                        <div class="corner"></div>
-                        <h2>23</h2>
-                        <p>SEP 24</p>
+                <table class="dt-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 80%;">Title <i class="fas fa-sort sort-icon"></i></th>
+                            <th style="width: 20%;">Actions <i class="fas fa-sort sort-icon"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kalender Pendidikan Tahun Ajaran 2023/2024</td>
+                            <td>
+                                <a href="#" class="btn-lihat"><i class="fas fa-eye"></i> Lihat</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>KALENDER PENDIDIKAN TP. 2024/2025</td>
+                            <td>
+                                <a href="#" class="btn-lihat"><i class="fas fa-eye"></i> Lihat</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="dt-bottom">
+                    <div class="dt-info">
+                        Menampilkan 1 sampai 2 dari 2 entri
                     </div>
-                    <div class="announcement-content">
-                        <h3>INFO PENGAMBILAN IJAZAH TP. 2023/2024</h3>
-                        <p>INFO PENGAMBILAN IJAZAH</p>
-                        <a href="#">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    <div class="dt-pagination">
+                        <a href="#" class="paginate_button previous disabled">Sebelumnya</a>
+                        <a href="#" class="paginate_button current">1</a>
+                        <a href="#" class="paginate_button next disabled">Selanjutnya</a>
                     </div>
                 </div>
 
-                <!-- ITEM 4 -->
-                <div class="announcement-card">
-                    <div class="announcement-date">
-                        <div class="corner"></div>
-                        <h2>02</h2>
-                        <p>SEP 24</p>
-                    </div>
-                    <div class="announcement-content">
-                        <h3>INFO SIDIK JARI</h3>
-                        <p>Diinformasikan kepada wali kelas 9 tahun kemaren 2023/2024 agar menginformasikan kepada siswa bahwa pelaksanaan sidik jari ijazah akan dilaksanakan Mulai hari selasa 03 September 2024 pada jam kerja 07.30 - 13.30 Wib.</p>
-                        <a href="#">Selengkapnya <i class="fas fa-arrow-right"></i></a>
-                    </div>
+                <div class="share-widgets">
+                    <a href="#" class="share-btn fb"><i class="fab fa-facebook-f"></i> Share</a>
+                    <a href="#" class="share-btn tw"><i class="fab fa-twitter"></i> Tweet</a>
+                    <a href="#" class="share-btn wa"><i class="fab fa-whatsapp"></i> Share</a>
                 </div>
 
             </div>
@@ -156,58 +148,58 @@
 
         <footer class="footer">
         <div class="container footer-container">
-          <div class="footer-info">
+            <div class="footer-info">
             <div class="logo">
-              <img src="https://www.mtsn1pesawaran.sch.id/assets/images/logo.png" alt="Logo MTsN 1 Pesawaran" />
-              <div class="text">
+                <img src="https://www.mtsn1pesawaran.sch.id/assets/images/logo.png" alt="Logo MTsN 1 Pesawaran" />
+                <div class="text">
                 <h1>MTS NEGERI 1</h1>
                 <h1 class="green-text">PESAWARAN</h1>
-              </div>
+                </div>
             </div>
             <p>Website Resmi MTsN 1 Pesawaran</p>
             <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook-square"></i></a>
-              <a href="#"><i class="fab fa-twitter-square"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-whatsapp"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
-          </div>
+            </div>
 
-          <div class="footer-menu">
+            <div class="footer-menu">
             <h3>Menu</h3>
             <ul>
-              <li><a href="index.html">Beranda</a></li>
-              <li><a href="#">Profil</a></li>
-              <li><a href="#">Berita</a></li>
-              <li><a href="#">Sertifikat Akreditasi</a></li>
-              <li><a href="galeri.html" class="active">Galeri</a></li>
-              <li><a href="ppdb.html">PPDB</a></li>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="#">Profil</a></li>
+                <li><a href="#">Berita</a></li>
+                <li><a href="#">Sertifikat Akreditasi</a></li>
+                <li><a href="galeri.html" class="active">Galeri</a></li>
+                <li><a href="#">PPDB</a></li>
             </ul>
-          </div>
+            </div>
 
-          <div class="footer-contact">
+            <div class="footer-contact">
             <h3>Kontak Kami</h3>
             <ul>
-              <li><i class="fas fa-phone"></i> (0729)</li>
-              <li><i class="fas fa-envelope"></i> admin@mtsn1pesawaran.sch.id</li>
-              <li><i class="fas fa-map-marker-alt"></i> Jalan Pesawaran</li>
+                <li><i class="fas fa-phone"></i> (0729)</li>
+                <li><i class="fas fa-envelope"></i> admin@mtsn1pesawaran.sch.id</li>
+                <li><i class="fas fa-map-marker-alt"></i> Jalan Pesawaran</li>
             </ul>
-          </div>
+            </div>
         </div>
-      </footer>
-      <div class="footer-bottom">
+        </div>
+        </footer>
+        <div class="footer-bottom">
         <div class="container">
-          <p>&copy; 2024 MTsN 1 Pesawaran</p>
+            <p>&copy; 2024 MTsN 1 Pesawaran</p>
         </div>
-      </div>
+        </div>
     </main>
 
     <script src="./src/js/index.js"></script>
-    <!-- SCRIPT SCROLL MANUAL UNTUK NAVBAR -->
+
     <script>
         const header = document.querySelector('header');
-        
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
                 header.classList.add('scrolled');
