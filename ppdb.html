@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="./src/css/ppdb.css" />
     <link rel="stylesheet" href="./src/css/footer.css" />
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -83,34 +86,67 @@
         <div class="ppdb-container">
           <aside class="ppdb-sidebar">
             <ul class="sidebar-menu">
-              <li><a href="javascript:void(0)" class="tab-link" onclick="openTab(event, 'informasi')">Informasi</a></li>
-              <li><a href="javascript:void(0)" class="tab-link active" onclick="openTab(event, 'pendaftaran')">Pendaftaran</a></li>
-              <li><a href="javascript:void(0)" class="tab-link" onclick="openTab(event, 'perbaikan')">Perbaikan Data</a></li>
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  class="tab-link active"
+                  onclick="openTab(event, 'informasi')"
+                  >Informasi</a
+                >
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  class="tab-link"
+                  onclick="openTab(event, 'pendaftaran')"
+                  >Pendaftaran</a
+                >
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  class="tab-link"
+                  onclick="openTab(event, 'perbaikan')"
+                  >Perbaikan Data</a
+                >
+              </li>
             </ul>
           </aside>
 
           <article class="ppdb-main">
             <!-- Informasi Section -->
-            <div id="informasi" class="content-section">
+            <div id="informasi" class="content-section active">
               <h2>Info dan Aturan PPDB MTS Negeri 1 Pesawaran TP. 2025/2026</h2>
               <div class="ppdb-info-text">
                 <p>Persyaratan calon peserta didik baru kelas 7 (tujuh) MTS:</p>
                 <ul>
-                  <li>Berusia paling tinggi 15 (lima belas) tahun pada tanggal 1</li>
+                  <li>
+                    Berusia paling tinggi 15 (lima belas) tahun pada tanggal 1
+                  </li>
                   <li>Juli tahun berjalan; dan</li>
-                  <li>Memiliki ijazah SD/sederajat atau dokumen lain yang menjelaskan telah menyelesaikan kelas 6 (enam) SD/MI.</li>
+                  <li>
+                    Memiliki ijazah SD/sederajat atau dokumen lain yang
+                    menjelaskan telah menyelesaikan kelas 6 (enam) SD/MI.
+                  </li>
                   <li>Pendaftaran mulai 14 April 2025 s.d 19 April 2025</li>
-                  <li class="no-bullet">Link Pendaftaran : https://bit.ly/ppdbmtsn1pesawaran</li>
-                  <li>test tertulis dan baca Al Qur'an hari minggu : 20 April 2025</li>
+                  <li class="no-bullet">
+                    Link Pendaftaran : https://bit.ly/ppdbmtsn1pesawaran
+                  </li>
+                  <li>
+                    test tertulis dan baca Al Qur'an hari minggu : 20 April 2025
+                  </li>
                 </ul>
               </div>
             </div>
 
             <!-- Pendaftaran Section (Active by default) -->
-            <div id="pendaftaran" class="content-section active">
+            <div id="pendaftaran" class="content-section">
               <div class="registration-status">
                 <h2>Saat Ini Bukan Periode Pendaftaran</h2>
-                <p>Periode adalah dari Minggu, 01 Maret 2026 12:00:00 sampai Rabu, 11 Maret 2026 12:00:00</p>
+                <p>
+                  Periode adalah dari Minggu, 01 Maret 2026 12:00:00 sampai
+                  Rabu, 11 Maret 2026 12:00:00
+                </p>
               </div>
             </div>
 
@@ -118,13 +154,26 @@
             <div id="perbaikan" class="content-section">
               <h2>Perbaikan Data Pendaftaran</h2>
               <div class="ppdb-info-text">
-                <p>Bagi calon peserta didik yang telah mendaftar namun ingin melakukan perbaikan data, silakan mengikuti langkah-langkah berikut:</p>
+                <p>
+                  Bagi calon peserta didik yang telah mendaftar namun ingin
+                  melakukan perbaikan data, silakan mengikuti langkah-langkah
+                  berikut:
+                </p>
                 <ul>
                   <li>Siapkan nomor pendaftaran/NISN Anda.</li>
-                  <li>Hubungi Panitia PPDB melalui nomor WhatsApp yang tertera di menu Kontak.</li>
-                  <li>Lampirkan bukti pendaftaran dan dokumen pendukung perubahan data.</li>
+                  <li>
+                    Hubungi Panitia PPDB melalui nomor WhatsApp yang tertera di
+                    menu Kontak.
+                  </li>
+                  <li>
+                    Lampirkan bukti pendaftaran dan dokumen pendukung perubahan
+                    data.
+                  </li>
                 </ul>
-                <p>Proses perbaikan data hanya dapat dilakukan selama periode pendaftaran berlangsung.</p>
+                <p>
+                  Proses perbaikan data hanya dapat dilakukan selama periode
+                  pendaftaran berlangsung.
+                </p>
               </div>
             </div>
           </article>
@@ -132,19 +181,23 @@
           <script>
             function openTab(evt, tabName) {
               var i, contentSection, tabLink;
-              
+
               // Hide all content sections
-              contentSection = document.getElementsByClassName("content-section");
+              contentSection =
+                document.getElementsByClassName("content-section");
               for (i = 0; i < contentSection.length; i++) {
                 contentSection[i].style.display = "none";
               }
-              
+
               // Remove "active" class from all tab links
               tabLink = document.getElementsByClassName("tab-link");
               for (i = 0; i < tabLink.length; i++) {
-                tabLink[i].className = tabLink[i].className.replace(" active", "");
+                tabLink[i].className = tabLink[i].className.replace(
+                  " active",
+                  "",
+                );
               }
-              
+
               // Show the current tab, and add an "active" class to the link that opened the tab
               document.getElementById(tabName).style.display = "block";
               evt.currentTarget.className += " active";
@@ -157,7 +210,10 @@
         <div class="container footer-container">
           <div class="footer-info">
             <div class="logo">
-              <img src="https://www.mtsn1pesawaran.sch.id/assets/images/logo.png" alt="Logo MTsN 1 Pesawaran" />
+              <img
+                src="https://www.mtsn1pesawaran.sch.id/assets/images/logo.png"
+                alt="Logo MTsN 1 Pesawaran"
+              />
               <div class="text">
                 <h1>MTS NEGERI 1</h1>
                 <h1 class="green-text">PESAWARAN</h1>
@@ -189,7 +245,9 @@
             <h3>Kontak Kami</h3>
             <ul>
               <li><i class="fas fa-phone"></i> (0729)</li>
-              <li><i class="fas fa-envelope"></i> admin@mtsn1pesawaran.sch.id</li>
+              <li>
+                <i class="fas fa-envelope"></i> admin@mtsn1pesawaran.sch.id
+              </li>
               <li><i class="fas fa-map-marker-alt"></i> Jalan Pesawaran</li>
             </ul>
           </div>
@@ -203,6 +261,5 @@
     </main>
 
     <script src="./src/js/index.js"></script>
-
   </body>
 </html>

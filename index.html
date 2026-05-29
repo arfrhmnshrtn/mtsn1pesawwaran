@@ -497,9 +497,53 @@ memudahkan proses pendaftaran masuk sekolah bagi peserta didik baru.
 
 
       <!-- footer -->
-       <div id="footer">
+        <footer class="footer">
+          <div class="container footer-container">
+            <div class="footer-info">
+              <div class="logo">
+                <img
+                  src="https://www.mtsn1pesawaran.sch.id/assets/images/logo.png"
+                  alt="Logo MTsN 1 Pesawaran"
+                />
+                <div class="text">
+                  <h1>MTS NEGERI 1</h1>
+                  <h1 class="green-text">PESAWARAN</h1>
+                </div>
+              </div>
+              <p>Website Resmi MTsN 1 Pesawaran</p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+                <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+                <a href="#"><i class="fab fa-youtube-square"></i></a>
+              </div>
+            </div>
 
-       </div>
+            <div class="footer-menu">
+              <h3>Menu</h3>
+              <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="#">Profil</a></li>
+                <li><a href="#">Berita</a></li>
+                <li><a href="#">Sertifikat Akreditasi</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="ppdb.html" class="active">PPDB</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-contact">
+              <h3>Kontak Kami</h3>
+              <ul>
+                <li><i class="fas fa-phone"></i> (0729)</li>
+                <li>
+                  <i class="fas fa-envelope"></i> admin@mtsn1pesawaran.sch.id
+                </li>
+                <li><i class="fas fa-map-marker-alt"></i> Jalan Pesawaran</li>
+              </ul>
+            </div>
+          </div>
+        </footer>
       <!-- akhir footer -->
 
     </main>
@@ -514,15 +558,8 @@ memudahkan proses pendaftaran masuk sekolah bagi peserta didik baru.
     <script>
       AOS.init({
         duration: 1500,
-        once: false,
+        once: true,
       });
-
-      fetch("./src/components/footer.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("footer").innerHTML = data;
-        })
-        .catch((error) => console.error("Error loading footer:", error));
     </script>
 
   </body>

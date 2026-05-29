@@ -11,7 +11,10 @@
     <!-- font awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
   </head>
   <body>
@@ -114,7 +117,7 @@
                 <a
                   href="javascript:void(0)"
                   class="tab-link"
-                  onclick="openTab(event, 'perbaikan')"
+                  onclick="openTab(event, 'kepemimpinan')"
                   >Riwayat Kepemimpinan</a
                 >
               </li>
@@ -122,7 +125,7 @@
                 <a
                   href="javascript:void(0)"
                   class="tab-link"
-                  onclick="openTab(event, 'perbaikan')"
+                  onclick="openTab(event, 'staf')"
                   >Staff & Kependidikan</a
                 >
               </li>
@@ -153,44 +156,112 @@
                   nama madrsah MTs Negeri Kedondong berubah menjadi MTs Negeri 1
                   Pesawaran sampai dengan saat ini.
                 </p>
+
+                <div class="social-share">
+                  <a href="#" class="share-btn facebook">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <span>Share</span>
+                  </a>
+
+                  <a href="#" class="share-btn twitter">
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <span>Share</span>
+                  </a>
+
+                  <a href="#" class="share-btn whatsapp">
+                    <i class="fa-brands fa-square-whatsapp"></i>
+                    <span>Share</span>
+                  </a>
+                </div>
               </div>
             </div>
 
-            <!-- Pendaftaran Section (Active by default) -->
+            <!-- Visi dan Misi -->
             <div id="pendaftaran" class="content-section">
-              <div class="registration-status">
-                <h2>Saat Ini Bukan Periode Pendaftaran</h2>
+              <div class="visimisi">
+                <h2>Visi</h2>
                 <p>
-                  Periode adalah dari Minggu, 01 Maret 2026 12:00:00 sampai
-                  Rabu, 11 Maret 2026 12:00:00
+                  MTsN 1 Pesawaran memiliki Visi “SEHAT, UNGGUL, KREATIF DAN
+                  AGAMIS (SUKA)”
                 </p>
+                <br />
+
+                <h2>Misi</h2>
+                <p>Dari hal tersebut dijabarkan menjadi Misi yaitu :</p>
+                <ol class="list-misi">
+                  <li>Menciptakan Lingkungan Madrasah Yang Sehat dan Bersih</li>
+                  <li>Meningkatkan Profesionalisme Guru dan Pegawai</li>
+                  <li>
+                    Meningkatkan Prestasi dalam Bidang akademik dan Non Akademik
+                  </li>
+                  <li>
+                    Menciptakan Kegiatan Belajar yang Inovatif, Kreatif dan
+                    Menyenangkan
+                  </li>
+                  <li>Meningkatkan Kegiatan Ekstrakulikuler secara Optimal</li>
+                  <li>
+                    Meningkatkan Intlektual Peserta Didik, sehingga Memiliki
+                    Daya Saing yang Tinggi dalam segala bidang
+                  </li>
+                  <li>
+                    Menjadikan Peserta Didik yang Memiliki Akhlakul Karimah dan
+                    Bertaqwa
+                  </li>
+                  <li>
+                    Menciptakan Suasana Madrasah Yang Kondusif dan Bernuansa
+                    Islami
+                  </li>
+                </ol>
               </div>
             </div>
 
-            <!-- Perbaikan Data Section -->
+            <!-- struktur orhanisasi -->
             <div id="perbaikan" class="content-section">
-              <h2>Perbaikan Data Pendaftaran</h2>
-              <div class="ppdb-info-text">
-                <p>
-                  Bagi calon peserta didik yang telah mendaftar namun ingin
-                  melakukan perbaikan data, silakan mengikuti langkah-langkah
-                  berikut:
-                </p>
-                <ul>
-                  <li>Siapkan nomor pendaftaran/NISN Anda.</li>
-                  <li>
-                    Hubungi Panitia PPDB melalui nomor WhatsApp yang tertera di
-                    menu Kontak.
-                  </li>
-                  <li>
-                    Lampirkan bukti pendaftaran dan dokumen pendukung perubahan
-                    data.
-                  </li>
-                </ul>
-                <p>
-                  Proses perbaikan data hanya dapat dilakukan selama periode
-                  pendaftaran berlangsung.
-                </p>
+              <h4>Berikut adalah struktur organisasinya</h4>
+              <div class="img-struktur">
+                <img src="./src/img/struktur_organisasi.jpg" alt="" />
+              </div>
+            </div>
+
+            <!-- riwayat kepemimpinan -->
+            <div id="kepemimpinan" class="content-section">
+              <p>
+                Sejak MTs Fajrun Nuha berubah menjadi Negeri kepemimpinan MTs
+                Negeri I Pesawaran mengalami pergantian kepemimpinan sebagai
+                berikut :
+              </p>
+              <br />
+              <div id="container-priode"></div>
+            </div>
+
+            <!-- staff -->
+            <div id="staf" class="content-section">
+              <div class="staff-container">
+                <!-- card 1 -->
+                <div class="staff-card">
+                  <div class="img-staf">
+                    <img src="./src/img/staf1.jpg" alt="staff" />
+                  </div>
+
+                  <h3>H. Fila Sofia Kahuripan, S.Pd.I.,M.M</h3>
+
+                  <p class="jabatan">KAUR Tata Usaha</p>
+
+                  <button>Lihat Profil</button>
+                </div>
+
+                <!-- card 2 -->
+                <div class="staff-card">
+                  <div class="img-staf">
+                    <img src="./src/img/staf2.jpg" alt="staff" />
+                  </div>
+
+                  <h3>Gamferi, M.Pd</h3>
+
+                  <p class="jabatan">Kepala Madrasah</p>
+
+                  <button>Lihat Profil</button>
+                </div>
               </div>
             </div>
           </article>
@@ -278,5 +349,78 @@
     </main>
 
     <script src="./src/js/index.js"></script>
+    <script>
+      const data = [
+        {
+          priode: "PERIODE TAHUN 1997 S/D 1998",
+          kepala: "Abdul Aziz, Ba",
+          tata_usaha: "Ngadipo, S. Ag",
+          kurikulum: "Sudarno, A.Md",
+          kesiswaan: "Drs. Abdul Rasyd",
+        },
+        {
+          priode: "PERIODE TAHUN 1998 S/D 2003",
+          kepala: " Dra. Dahlena Ibrahim",
+          tata_usaha: "Ngadipo, S. Ag",
+          kurikulum: "Hilman, S. Ag",
+          kesiswaan: "Sibro Malisi, S. Ag",
+        },
+        {
+          priode:
+            "Selanjutnya Pada Tahun 2000 S/d 2003 mengalami pergantian wakil kepala madrasah sebagai berikut :",
+          tata_usaha: "Ngadipo, S. Ag",
+          kurikulum: "Hilman, S. Ag",
+          kesiswaan: "Sibro Malisi, S. Ag",
+          prasarana: "Marwiyah, S. Pd",
+        },
+      ];
+
+      const container = document.getElementById("container-priode");
+
+      data.forEach((item) => {
+        container.innerHTML += `
+      <div class="priode">
+        <p class="title-priode">${item.priode}</p>
+
+        ${
+          item.kepala
+            ? `
+            <div class="info-row">
+              <span class="label">Kepala Madrasah</span>
+              <span class="value">${item.kepala}</span>
+            </div>
+          `
+            : ""
+        }
+
+        <div class="info-row">
+          <span class="label">Kaur Tata Usaha</span>
+          <span class="value">${item.tata_usaha}</span>
+        </div>
+
+        <div class="info-row">
+          <span class="label">Waka Kurikulum</span>
+          <span class="value">${item.kurikulum}</span>
+        </div>
+
+        <div class="info-row">
+          <span class="label">Waka Kesiswaan</span>
+          <span class="value">${item.kesiswaan}</span>
+        </div>
+
+        ${
+          item.prasarana
+            ? `
+            <div class="info-row">
+              <span class="label">Waka Sarana Prasarana</span>
+              <span class="value">${item.prasarana}</span>
+            </div>
+          `
+            : ""
+        }
+      </div>
+    `;
+      });
+    </script>
   </body>
 </html>

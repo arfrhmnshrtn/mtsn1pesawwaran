@@ -565,7 +565,7 @@
 }
 
 .news-list .news-card {
-  flex: 1 450px;
+  flex: 1 1 300px;
   border-radius: 5px;
   overflow: hidden;
   margin-top: 50px;
@@ -823,6 +823,12 @@
   margin-bottom: 30px;
 }
 
+
+
+.footer .social-icons {
+  display: flex;
+  flex-direction: row;
+}
 @media (max-width: 768px) {
   .slider-counter {
     left: 15px;
@@ -938,6 +944,23 @@
   .list-ekstrakulikuler {
     grid-template-columns: 1fr;
   }
+
+  .smart-school .contain {
+    flex-direction: column;
+  }
+
+  .ppdb-content {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .ppdb-content p {
+    width: 100%;
+  }
+
+  .list-ekstrakulikuler .card .content-ekstrakulikuler {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -960,5 +983,49 @@
 
   .vertical-social .line {
     height: 120px;
+  }
+
+  .achievement-card {
+    flex-direction: column;
+  }
+  .achievement-image {
+    width: 100%;
+    height: 200px;
+  }
+  .announcement-card {
+    flex-direction: column;
+  }
+  .announcement-date {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    margin-top: 0;
+    left: 0;
+  }
+  .announcement-date .corner {
+    display: none;
+  }
+  .announcement-content {
+    padding: 20px;
+  }
+  .announcement-content h3, 
+  .announcement-content p, 
+  .announcement-content a {
+    margin-left: 0;
+  }
+  .list-ekstrakulikuler .card {
+    flex-direction: column;
+  }
+  .list-ekstrakulikuler .card img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 0;
+  }
+  .child {
+    gap: 30px;
   }
 }

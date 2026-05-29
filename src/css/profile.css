@@ -171,6 +171,169 @@
   font-weight: 600;
 }
 
+.social-share {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.share-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 18px;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.share-btn .icon {
+  width: 22px;
+  height: 22px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 3px; */
+  /* font-size: 14px; */
+}
+
+/* Facebook */
+.facebook {
+  background: #3b5998;
+  height: 100%;
+}
+
+.share-btn i {
+  /* background-color: white; */
+  /* padding: 5px; */
+}
+
+.facebook:hover {
+  background: #2f477a;
+}
+
+/* Twitter */
+.twitter {
+  background: #1da1f2;
+}
+
+.twitter:hover {
+  background: #1687cc;
+}
+
+/* WhatsApp */
+.whatsapp {
+  background: #4dc247;
+}
+
+.whatsapp:hover {
+  background: #3ca137;
+}
+
+.list-misi {
+  /* background-color: red; */
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.img-struktur img {
+  width: 500px;
+}
+
+.info-row {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.label {
+  width: 300px;
+  position: relative;
+}
+
+.label::after {
+  content: ":";
+  position: absolute;
+  right: 1px;
+}
+
+.value {
+  flex: 1;
+}
+
+.title-priode {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.priode {
+  margin-top: 20px;
+}
+
+#staf {
+  padding: 20px;
+}
+
+.title-staf {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.staff-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.staff-card {
+  width: 320px;
+  background: white;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.img-staf img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.staff-card h3 {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.jabatan {
+  color: green;
+  font-weight: bold;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.staff-card button {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  background: white;
+  color: #ff6b2d;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.staff-card button:hover {
+  background: #ff6b2d;
+  color: white;
+}
+
 @media (max-width: 992px) {
   .ppdb-container {
     flex-direction: column;
