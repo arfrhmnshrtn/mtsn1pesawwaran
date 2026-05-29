@@ -34,17 +34,17 @@
           <ul>
             <li><a href="index.html">Beranda</a></li>
             <li class="dropdown">
-              <a href="#">Profil</a>
+              <a href="index.html#profil">Profil</a>
               <div class="dropdown-content">
-                <a href="#">Sejarah</a>
-                <a href="#">Visi & Misi</a>
-                <a href="#">Struktur Organisasi</a>
+                <a href="index.html#profil">Sejarah</a>
+                <a href="index.html#profil">Visi & Misi</a>
+                <a href="index.html#profil">Struktur Organisasi</a>
               </div>
             </li>
             <li class="dropdown">
-              <a href="#">Berita</a>
+              <a href="berita.html">Berita</a>
               <div class="dropdown-content">
-                <a href="#">Berita</a>
+                <a href="berita.html">Berita</a>
                 <a href="#">Pengumuman</a>
                 <a href="#">Ekstrakurikuler</a>
               </div>
@@ -52,12 +52,12 @@
             <li class="dropdown">
               <a href="#">Sertifikat Akreditasi</a>
               <div class="dropdown-content">
-                <a href="#">S.A. 2019-2024</a>
-                <a href="#">S.A. 2024-2029</a>
+                <a href="https://drive.google.com/file/d/1xxnYGVyeWu2U4i3UZnrBHEpFYEshY3aA/view?usp=sharing">S.A. 2019-2024</a>
+                <a href="https://drive.google.com/file/d/12yPRJ8OxWpkmpJR3eQBqy7cBieBxNZf5/view?usp=sharing">S.A. 2024-2029</a>
               </div>
             </li>
             <li class="dropdown">
-              <a href="#">Galeri</a>
+              <a href="galeri.html">Galeri</a>
               <div class="dropdown-content">
                 <a href="galeri.html">Foto</a>
                 <a href="video.html">Video</a>
@@ -123,6 +123,7 @@
               </div>
 
               <div class="captcha-container">
+
                 <div class="captcha-img"></div>
                 <label class="captcha-label"
                   >Tuliskan Kode Captcha Di Atas</label
@@ -132,6 +133,12 @@
                     type="text"
                     placeholder="Masukkan kode captcha disini"
                   />
+
+                <div class="captcha-img" id="captchaDisplay">EzszC</div>
+                <label class="captcha-label">Tuliskan Kode Captcha Di Atas</label>
+                <div class="form-group">
+                  <input type="text" id="captchaInput" placeholder="Masukkan kode captcha disini" required autocomplete="off" />
+
                 </div>
               </div>
 
@@ -187,11 +194,11 @@
             <h3>Menu</h3>
             <ul>
               <li><a href="index.html">Beranda</a></li>
-              <li><a href="#">Profil</a></li>
-              <li><a href="#">Berita</a></li>
-              <li><a href="#">Sertifikat Akreditasi</a></li>
+              <li><a href="index.html#profil">Profil</a></li>
+              <li><a href="berita.html">Berita</a></li>
               <li><a href="galeri.html">Galeri</a></li>
               <li><a href="ppdb.html">PPDB</a></li>
+              <li><a href="kontak.html" class="active">Kontak</a></li>
             </ul>
           </div>
 
@@ -209,12 +216,52 @@
       </footer>
       <div class="footer-bottom">
         <div class="container">
-          <p>&copy; 2024 MTsN 1 Pesawaran</p>
+          <p>&copy; 2026 MTsN 1 Pesawaran</p>
         </div>
       </div>
     </main>
 
-    <!-- <script src="./src/js/index.js"></script> -->
-    <script src="./src/js/captcha.js"></script>
+    <script src="./src/js/index.js"></script>
+    <script>
+      // DOM Elements
+      const form = document.querySelector('form');
+      const captchaDisplay = document.getElementById('captchaDisplay');
+      const captchaInput = document.getElementById('captchaInput');
+
+      // Function to generate a random 5-character alphanumeric captcha
+      function generateCaptcha() {
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        let result = '';
+        const length = 5;
+        for (let i = 0; i < length; i++) {
+          const randomIndex = Math.floor(Math.random() * characters.length);
+          result += characters.charAt(randomIndex);
+        }
+        return result;
+      }
+
+      // Function to set new captcha
+      function newCaptcha() {
+        captchaDisplay.textContent = generateCaptcha();
+        captchaInput.value = '';
+      }
+
+      // Generate on load
+      newCaptcha();
+
+      // Validate form submission
+      form.addEventListener('submit', function(event) {
+        const enteredCaptcha = captchaInput.value.trim();
+        const correctCaptcha = captchaDisplay.textContent.trim();
+
+        if (enteredCaptcha !== correctCaptcha) {
+          event.preventDefault(); // Prevent form submission
+          alert('Kode Captcha salah! Silakan coba lagi.');
+          newCaptcha(); // Refresh captcha
+        } else {
+          alert('Pesan berhasil terkirim! Terima kasih.');
+        }
+      });
+    </script>
   </body>
 </html>

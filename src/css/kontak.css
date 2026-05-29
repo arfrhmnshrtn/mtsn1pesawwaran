@@ -1,10 +1,10 @@
 .hero-contact {
   position: relative;
-  height: 300px;
+  height: 250px;
   background: url("../img/bg-galeri.png") center/cover no-repeat;
   display: flex;
   align-items: center;
-  color: white;
+  color: #ffffff;
   padding-top: 150px; 
 }
 
@@ -13,24 +13,26 @@
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
 
 .hero-contact .container {
   position: relative;
-  z-index: 10;
-  padding: 0 5%;
+  z-index: 2;
+  padding: 0 80px;
 }
 
 .hero-contact h1 {
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 35px;
+  font-weight: 500;
   margin-bottom: 5px;
   position: relative;
 }
 
 .hero-contact .breadcrumb {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
+  
 }
 
 .hero-contact .breadcrumb a {
@@ -117,7 +119,6 @@
   resize: vertical;
 }
 
-/* Captcha Styles */
 .captcha-container {
   margin-top: 20px;
   display: flex;
@@ -128,19 +129,20 @@
 .captcha-img {
   width: 150px;
   height: 50px;
-  background: #f0f0f0;
+  background: #e8eae9;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 24px;
-  letter-spacing: 5px;
+  font-family: 'Times New Roman', Times, Georgia, serif;
+  font-style: italic;
+  font-size: 28px;
+  letter-spacing: -2px;
   font-weight: bold;
   color: #555;
-  border: 1px solid #ddd;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+  border: 1px solid #bbb;
   user-select: none;
-  background-image: linear-gradient(45deg, #f0f0f0 25%, transparent 25%, transparent 50%, #f0f0f0 50%, #f0f0f0 75%, transparent 75%, transparent);
-  background-size: 20px 20px;
+  background-image: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.08) 0px, rgba(0, 0, 0, 0.08) 1px, transparent 1px, transparent 4px);
 }
 
 .captcha-label {
@@ -165,7 +167,7 @@
   background-color: #004d00;
 }
 
-/* Sidebar Styles */
+
 .contact-details {
   list-style: none;
   margin-bottom: 30px;
@@ -181,7 +183,7 @@
 }
 
 .contact-details i {
-  color: #e67e22; /* Orange color for icons as seen in reference */
+  color: #e67e22; 
   font-size: 18px;
   width: 20px;
   text-align: center;

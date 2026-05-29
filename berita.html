@@ -5,229 +5,290 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Berita - MTsN 1 Pesawaran</title>
 
+    <!-- Panggil CSS -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./src/css/navbar.css" />
     <link rel="stylesheet" href="./src/css/berita.css" /> 
     <link rel="stylesheet" href="./src/css/footer.css" />
 
+    <!-- Boxicons & Font Awesome -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 <body>
     <main>
+        <!-- NAVBAR MANUAL -->
         <header>
             <div class="container navbar-container">
-            <div class="logo-container">
-                <div class="logo">
-                <img
-                    src="https://www.mtsn1pesawaran.sch.id/assets/images/logo.png"
-                    alt=""
-                />
-                <div class="text">
-                    <h1>MTS Negri 1</h1>
-                    <h1>Pesawaran</h1>
-                </div>
-                </div>
-
-                <div id="humberger-menu">
-                <i class="fas fa-bars"></i>
-                </div>
-            </div>
-
-            <div class="nav-links">
-                <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <div class="dropdown">
-                    <li><a href="#">Profil</a></li>
-                    <div class="dropdown-content">
-                    <a href="#">Sejarah</a>
-                    <a href="#">Visi & Misi</a>
-                    <a href="#">Struktur Organisasi</a>
+                <div class="logo-container">
+                    <div class="logo">
+                        <img src="https://www.mtsn1pesawaran.sch.id/assets/images/logo.png" alt="Logo MTsN 1 Pesawaran"/>
+                        <div class="text">
+                            <h1>MTS Negri 1</h1>
+                            <h1>Pesawaran</h1>
+                        </div>
+                    </div>
+                    <div id="humberger-menu">
+                        <i class="fas fa-bars"></i>
                     </div>
                 </div>
 
-                <div class="dropdown">
-                    <li><a href="berita.html">Berita</a></li>
-                    <div class="dropdown-content">
-                    <a href="berita.html">Berita</a>
-                    <a href="pengumuman.html">Pengumuman</a>
-                    <a href="ekstrakurikuler.html">Ekstrakurikuler</a>
-                    <a href="prestasi.html">Prestasi</a>
-                    <a href="kurikulum.html">Kurikulum</a>
-                    <a href="#">Kalender Pendidikan</a>
-                    <a href="#">Jadwal Pembelajaran</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <li><a href="#">Sertifikasi Akreditasi</a></li>
-                    <div class="dropdown-content">
-                    <a href="https://drive.google.com/file/d/1xxnYGVyeWu2U4i3UZnrBHEpFYEshY3aA/view?usp=sharing">S.A. 2019-2024</a>
-                    <a href="https://drive.google.com/file/d/12yPRJ8OxWpkmpJR3eQBqy7cBieBxNZf5/view?usp=sharing">S.A. 2024-2029</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <li><a href="galeri.html">Galeri</a></li>
-                    <div class="dropdown-content">
-                    <a href="#">Foto</a>
-                    <a href="#">Video</a>
-                    </div>
-                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <div class="dropdown">
+                            <li><a href="#">Profil</a></li>
+                            <div class="dropdown-content">
+                                <a href="#">Sejarah</a>
+                                <a href="#">Visi & Misi</a>
+                                <a href="#">Struktur Organisasi</a>
+                            </div>
+                        </div>
 
-                <li><a href="#">PPDB</a></li>
-                <li><a href="#">Kontak</a></li>
-                </ul>
-            </div>
+                        <div class="dropdown">
+                            <li><a href="berita.html">Berita</a></li>
+                            <div class="dropdown-content">
+                                <a href="berita.html">Berita</a>
+                                <a href="pengumuman.html">Pengumuman</a>
+                                <a href="ekstrakurikuler.html">Ekstrakurikuler</a>
+                                <a href="prestasi.html">Prestasi</a>
+                                <a href="kurikulum.html">Kurikulum</a>
+                                <a href="kalender_pendidikan.html">Kalender Pendidikan</a>
+                                <a href="jadwal_pembelajaran.html">Jadwal Pembelajaran</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <li><a href="#">Sertifikasi Akreditasi</a></li>
+                            <div class="dropdown-content">
+                                <a href="https://drive.google.com/file/d/1xxnYGVyeWu2U4i3UZnrBHEpFYEshY3aA/view?usp=sharing">S.A. 2019-2024</a>
+                                <a href="https://drive.google.com/file/d/12yPRJ8OxWpkmpJR3eQBqy7cBieBxNZf5/view?usp=sharing">S.A. 2024-2029</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <li><a href="#">Galeri</a></li>
+                            <div class="dropdown-content">
+                                <a href="#">Foto</a>
+                                <a href="#">Video</a>
+                            </div>
+                        </div>
+
+                        <li><a href="#">PPDB</a></li>
+                        <li><a href="#">Kontak</a></li>
+                    </ul>
+                </div>
             </div>
         </header>
-        <div id="navbar"></div>
         
+        <!-- Bagian Hero (Gambar Atas) -->
         <section class="hero-berita">
             <div class="hero-overlay"></div>
             <div class="container hero-content">
                 <h1 class="page-title">Berita</h1>
+                <!-- Teks breadcrumb dikembalikan normal tanpa link agar sesuai CSS -->
                 <p class="breadcrumb">Home / Berita</p>
             </div>
         </section>
 
-        <section class="container news-section">
-            <div class="news-grid">
+        <!-- Bagian Daftar Berita -->
+        <section class="container news-section" style="padding: 50px 20px;">
+            <div class="news-grid" id="newsGrid">
                 
+                <!-- BERITA 1 -->
                 <article class="news-card">
-                    <img src="https://via.placeholder.com/250x150" alt="Penyerahan Murid" class="news-img">
+                    <img src="https://www.mtsn1pesawaran.sch.id/assets/uploads/news/20260428131850_mtsn-1-pesawaran-gelar-pelepasan-murid-kelas-ix-ke.jpeg" alt="Pelepasan Kelas IX" class="news-img">
                     <div class="news-info">
                         <h3 class="news-title">MTsN 1 Pesawaran gelar Penyerahan Murid Kelas IX kepada Wali Murid berlangsung Sederhana dan Khidmat</h3>
                         <p class="news-meta">pelepasan kelas ix</p>
-                        <a href="#" class="read-more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        <a href="detail-berita.html" class="read-more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
 
+                <!-- BERITA 2 -->
                 <article class="news-card">
-                    <img src="src/img/news2.jpeg" alt="Tim Futsal" class="news-img">
+                    <img src="https://www.mtsn1pesawaran.sch.id/assets/uploads/news/20260427094737_tampil-impresif-tim-futsal-primavera-mtsn-1-pesawa.jpeg" alt="Futsal Primavera" class="news-img">
                     <div class="news-info">
                         <h3 class="news-title">Tampil Impresif, Tim Futsal Primavera MTsN 1 Pesawaran Rengkuh Juara Regional Lampung</h3>
                         <p class="news-meta">juara</p>
-                        <a href="#" class="read-more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        <a href="detail-berita.html" class="read-more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
 
+                <!-- BERITA 3 -->
                 <article class="news-card">
-                    <img src="src/img/news2.jpeg" alt="Tim Futsal" class="news-img">
-                    <div class="news-info">
-                        <h3 class="news-title">Tangis Haru dan Senyum Bahagia Iringi Temu Pamit Purna Tugas Guru MTsN 1 Pesawaran</h3>
-                        <p class="news-meta">temu pamit</p>
-                        <a href="#" class="read-more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <article class="news-card">
-                    <img src="https://via.placeholder.com/250x150" alt="Ujian Madrasah" class="news-img">
+                    <img src="https://www.mtsn1pesawaran.sch.id/assets/uploads/news/20260421125322_kepala-mtsn-1-pesawaran-buka-kegiatan-ujian-madras.jpeg" alt="Ujian Madrasah" class="news-img">
                     <div class="news-info">
                         <h3 class="news-title">Kepala MTsN 1 Pesawaran Buka Kegiatan Ujian Madrasah Kelas IX TA. 2025/2026</h3>
                         <p class="news-meta">um</p>
-                        <a href="#" class="read-more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        <a href="detail-berita.html" class="read-more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
 
+                <!-- BERITA 4 -->
                 <article class="news-card">
-                    <img src="https://via.placeholder.com/250x150" alt="Penerimaan Murid Baru" class="news-img">
+                    <img src="https://www.mtsn1pesawaran.sch.id/assets/uploads/news/20260412100902_mtsn-1-pesawaran-buka-penerimaan-murid-baru-tahun-.png" alt="Penerimaan Murid Baru" class="news-img">
                     <div class="news-info">
                         <h3 class="news-title">MTsN 1 Pesawaran Buka Penerimaan Murid Baru Tahun Ajaran 2026/2027</h3>
                         <p class="news-meta">PMB</p>
-                        <a href="#" class="read-more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        <a href="detail-berita.html" class="read-more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
 
+                <!-- BERITA 5 -->
                 <article class="news-card">
-                    <img src="https://via.placeholder.com/250x150" alt="Penerimaan Murid Baru" class="news-img">
+                    <img src="https://www.mtsn1pesawaran.sch.id/assets/uploads/news/20260330141250_tangis-haru-dan-senyum-bahagia-iringi-temu-pamit-p.jpeg" alt="Purna Tugas Guru" class="news-img">
                     <div class="news-info">
-                        <h3 class="news-title">MTsN 1 Pesawaran Buka Penerimaan Murid Baru Tahun Ajaran 2026/2027</h3>
-                        <p class="news-meta">PMB</p>
-                        <a href="#" class="read-more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        <h3 class="news-title">Tangis Haru dan Senyum Bahagia Iringi Temu Pamit Purna Tugas Guru MTsN 1 Pesawaran</h3>
+                        <p class="news-meta">temu pamit</p>
+                        <a href="detail-berita.html" class="read-more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- BERITA 6 -->
+                <article class="news-card">
+                    <img src="https://www.mtsn1pesawaran.sch.id/assets/uploads/news/20260310112623_tumbuhkan-jiwa-empati-dan-agamis-osis-mtsn-1-pesaw.jpeg" alt="Bagi Takjil" class="news-img">
+                    <div class="news-info">
+                        <h3 class="news-title">Tumbuhkan Jiwa Empati dan Agamis, OSIS MTsN 1 Pesawaran Bagikan Takjil dan Sembako</h3>
+                        <p class="news-meta">berbagi takjil dan sembako</p>
+                        <a href="detail-berita.html" class="read-more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- ============================================== -->
+                <!-- BERITA 7 KE ATAS DISEMBUNYIKAN (display: none) -->
+                <!-- ============================================== -->
+
+                <!-- BERITA 7: Futsal Omped -->
+                <article class="news-card" style="display: none;">
+                    <img src="https://www.mtsn1pesawaran.sch.id/assets/uploads/news/20260209153155_mtsn-1-pesawaran-gelar-friendly-match-futsal-bersa.jpeg" alt="Friendly Match Futsal" class="news-img">
+                    <div class="news-info">
+                        <h3 class="news-title">MTsN 1 Pesawaran Gelar Friendly Match Futsal Bersama Omped, Konten Kreator Nasional Asal Pesawaran</h3>
+                        <p class="news-meta">onped</p>
+                        <a href="detail-berita.html" class="read-more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- BERITA 8: Prestasi Renang -->
+                <article class="news-card" style="display: none;">
+                    <img src="https://www.mtsn1pesawaran.sch.id/assets/uploads/news/20260126132733_alwan-rizqoni-ukir-prestasi-di-kejuaraan-renang-or.jpeg" alt="Prestasi Renang" class="news-img">
+                    <div class="news-info">
+                        <h3 class="news-title">Alwan Rizqoni Ukir Prestasi di Kejuaraan Renang Orca Fest IV Kota Metro</h3>
+                        <p class="news-meta">juara renang</p>
+                        <a href="detail-berita.html" class="read-more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- BERITA 9: Hari Guru -->
+                <article class="news-card" style="display: none;">
+                    <img src="https://www.mtsn1pesawaran.sch.id/assets/uploads/news/20251125145939_mtsn-1-pesawaran-peringati-hari-guru-2025-dengan-t.jpeg" alt="Hari Guru 2025" class="news-img">
+                    <div class="news-info">
+                        <h3 class="news-title">MTsN 1 Pesawaran Peringati Hari Guru 2025 dengan Tema "Merawat Semesta dengan Cinta"</h3>
+                        <p class="news-meta">hgn</p>
+                        <a href="detail-berita.html" class="read-more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- BERITA 10: Hari Santri -->
+                <article class="news-card" style="display: none;">
+                    <img src="https://www.mtsn1pesawaran.sch.id/assets/uploads/news/20251022131613_mtsn-1-pesawaran-gelar-peringatan-hari-santri-nasi.jpeg" alt="Hari Santri 2025" class="news-img">
+                    <div class="news-info">
+                        <h3 class="news-title">MTsN 1 Pesawaran Gelar Peringatan Hari Santri Nasional 2025 dengan Istighosah dan Gebyar Seni</h3>
+                        <p class="news-meta">hari santri 2025</p>
+                        <a href="detail-berita.html" class="read-more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
 
             </div>
 
-            <div class="btn-container">
-                <button class="btn-load-more">Load More</button>
+            <!-- Tombol Load More -->
+            <div class="btn-container" style="text-align: center; margin-top: 40px;">
+                <button id="btnLoadMore" style="padding: 12px 30px; background-color: #0b6b2c; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 16px; transition: background-color 0.3s;">Load More</button>
             </div>
         </section>
 
+        <!-- FOOTER -->
         <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-info">
-            <div class="logo">
-                <img src="https://www.mtsn1pesawaran.sch.id/assets/images/logo.png" alt="Logo MTsN 1 Pesawaran" />
-                <div class="text">
-                <h1>MTS NEGERI 1</h1>
-                <h1 class="green-text">PESAWARAN</h1>
+            <div class="container footer-container">
+                <div class="footer-info">
+                    <div class="logo">
+                        <img src="https://www.mtsn1pesawaran.sch.id/assets/images/logo.png" alt="Logo MTsN 1 Pesawaran" />
+                        <div class="text">
+                            <h1>MTS NEGERI 1</h1>
+                            <h1 class="green-text">PESAWARAN</h1>
+                        </div>
+                    </div>
+                    <p>Website Resmi MTsN 1 Pesawaran</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-menu">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="#">Profil</a></li>
+                        <li><a href="#">Berita</a></li>
+                        <li><a href="#">Sertifikat Akreditasi</a></li>
+                        <li><a href="galeri.html">Galeri</a></li>
+                        <li><a href="#">PPDB</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Kontak Kami</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (0729)</li>
+                        <li><i class="fas fa-envelope"></i> admin@mtsn1pesawaran.sch.id</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Jalan Pesawaran</li>
+                    </ul>
                 </div>
             </div>
-            <p>Website Resmi MTsN 1 Pesawaran</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-square"></i></a>
-                <a href="#"><i class="fab fa-twitter-square"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-            </div>
-
-            <div class="footer-menu">
-            <h3>Menu</h3>
-            <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="#">Profil</a></li>
-                <li><a href="berita.html">Berita</a></li>
-                <li><a href="#">Sertifikat Akreditasi</a></li>
-                <li><a href="galeri.html" class="active">Galeri</a></li>
-                <li><a href="#">PPDB</a></li>
-            </ul>
-            </div>
-
-            <div class="footer-contact">
-            <h3>Kontak Kami</h3>
-            <ul>
-                <li><i class="fas fa-phone"></i> (0729)</li>
-                <li><i class="fas fa-envelope"></i> admin@mtsn1pesawaran.sch.id</li>
-                <li><i class="fas fa-map-marker-alt"></i> Jalan Pesawaran</li>
-            </ul>
-            </div>
-        </div>
-        </div>
         </footer>
         <div class="footer-bottom">
-        <div class="container">
-            <p>&copy; 2024 MTsN 1 Pesawaran</p>
-        </div>
+            <div class="container">
+                <p>&copy; 2024 MTsN 1 Pesawaran</p>
+            </div>
         </div>
     </main>
 
+    <!-- KEMBALIKAN SCRIPT INDEX.JS YANG SEMPAT HILANG -->
     <script src="./src/js/index.js"></script>
+
+    <!-- SCRIPT SCROLL MANUAL UNTUK NAVBAR -->
     <script>
-        // Pastikan jalur ini benar: ./src/components/navbar.html
-        fetch("./src/components/navbar.html")
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error("Gagal mengambil file navbar.html");
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+    <!-- SCRIPT UNTUK TOMBOL LOAD MORE -->
+    <script>
+        const loadMoreBtn = document.getElementById('btnLoadMore');
+        
+        loadMoreBtn.addEventListener('click', function() {
+            const hiddenCards = document.querySelectorAll('.news-card[style="display: none;"]');
+            
+            for (let i = 0; i < 4; i++) {
+                if (hiddenCards[i]) {
+                    hiddenCards[i].style.display = ''; 
                 }
-                return response.text();
-            })
-            .then((data) => {
-                document.getElementById("navbar").innerHTML = data;
-                
-                // Tambahkan logika scroll milik Arief di sini
-                const navbarContainer = document.querySelector('.navbar-container');
-                window.addEventListener('scroll', () => {
-                    if (window.scrollY > 50) {
-                        navbarContainer.classList.add('scrolled');
-                    } else {
-                        navbarContainer.classList.remove('scrolled');
-                    }
-                });
-            })
-            .catch((error) => console.error("Error:", error));
+            }
+            
+            const remainingHidden = document.querySelectorAll('.news-card[style="display: none;"]');
+            if (remainingHidden.length === 0) {
+                loadMoreBtn.style.display = 'none';
+            }
+        });
     </script>
 </body>
 </html>

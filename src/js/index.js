@@ -1,5 +1,6 @@
-const humbererMenu = document.getElementById("humberger-menu");
+const humbergerMenu = document.getElementById("humberger-menu");
 const navbarMenu = document.querySelector(".nav-links");
+
 
 const navbarContainer = document.querySelector(".navbar-container");
 
@@ -12,8 +13,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-humbererMenu.addEventListener("click", function () {
-  console.log("clicked");
+humbergerMenu.addEventListener("click", function () {
   navbarMenu.classList.toggle("active");
   const icon = humbererMenu.querySelector("i");
   icon.classList.toggle("fa-bars");

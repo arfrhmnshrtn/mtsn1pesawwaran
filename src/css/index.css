@@ -276,13 +276,14 @@
   position: absolute;
   inset: 0;
 
-  background: rgba(255, 255, 255, 0.7); /* opacity */
+  background: rgba(255, 255, 255, 0.7);
+  /* opacity */
 
   z-index: 1;
 }
 
 /* content di atas overlay */
-.smart-school > * {
+.smart-school>* {
   position: relative;
   z-index: 2;
 }
@@ -552,7 +553,7 @@
   margin: 80px auto;
 }
 
-.news section p {
+.news-section p {
   font-size: 14px;
   color: #333;
   margin-bottom: 20px;
@@ -866,10 +867,12 @@
   .smart-school {
     padding: 50px 20px;
   }
+
   .smart-school .contain .card {
     width: 100%;
     margin: 10px;
   }
+
   .smart-school .contain .card p {
     font-size: 8px;
   }
@@ -984,6 +987,7 @@
   .vertical-social .line {
     height: 120px;
   }
+<<<<<<< HEAD
 
   .achievement-card {
     flex-direction: column;
@@ -1029,3 +1033,6 @@
     gap: 30px;
   }
 }
+=======
+}
+>>>>>>> 81fcc928f50046e3a19e2b16d1fb2157538d297d
