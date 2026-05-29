@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
   /* font-family: sans-serif; */
 }
 
@@ -371,9 +372,7 @@
   font-size: 12px;
 }
 
-/* =========================
-   PRESTASI
-========================= */
+/* prestasi */
 
 .achievement-list {
   display: flex;
@@ -439,10 +438,6 @@
   font-size: 12px;
 }
 
-/* =========================
-   PENGUMUMAN
-========================= */
-
 .announcement-list {
   display: flex;
   flex-direction: column;
@@ -455,10 +450,6 @@
   width: 100%;
   position: relative;
 }
-
-/* =========================
-   DATE BOX
-========================= */
 
 .announcement-date {
   width: 88px;
@@ -509,10 +500,6 @@
   line-height: 1.1;
   margin-top: 2px;
 }
-
-/* =========================
-   CONTENT
-========================= */
 
 .announcement-content {
   background: #f1f1f1;
@@ -627,6 +614,216 @@
   font-size: 13px;
 }
 
+/* ekstrakurikuler */
+.container-ekstrakulikuler {
+  width: 90%;
+  max-width: 1400px;
+  margin: 80px auto;
+}
+
+.head-ekstrakulikuler {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.head-ekstrakulikuler h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.list-ekstrakulikuler {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  gap: 20px;
+}
+
+.list-ekstrakulikuler .card {
+  border-radius: 5px;
+  display: flex;
+  border: 2px solid green;
+  box-shadow: 2px;
+  /* background-color: green; */
+}
+
+.list-ekstrakulikuler .card:last-child {
+  grid-column: span 2;
+  justify-self: center;
+  width: 50%;
+}
+.list-ekstrakulikuler .card .img {
+  height: 100%;
+  background-color: red;
+}
+.list-ekstrakulikuler .card img {
+  width: 175px;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.list-ekstrakulikuler .card .content-ekstrakulikuler {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px;
+  width: 100%;
+  position: relative;
+}
+
+.list-ekstrakulikuler .card .content-ekstrakulikuler:hover {
+  color: white;
+}
+.list-ekstrakulikuler .card .content-ekstrakulikuler:hover a {
+  color: white;
+}
+
+.list-ekstrakulikuler .card .content-ekstrakulikuler::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    160deg,
+    rgba(14, 150, 18, 1) 0%,
+    rgba(68, 171, 27, 1) 61%,
+    rgba(232, 92, 16, 1) 100%
+  );
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+
+  z-index: -1;
+}
+
+.list-ekstrakulikuler .card .content-ekstrakulikuler:hover::before {
+  transform: scaleX(1);
+}
+
+.list-ekstrakulikuler .card .content-ekstrakulikuler a {
+  text-decoration: none;
+  color: #000;
+  margin-top: 10px;
+}
+
+.list-ekstrakulikuler .card .content-ekstrakulikuler h4 {
+  font-size: 20px;
+}
+
+.list-ekstrakulikuler .card .content-ekstrakulikuler p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* galeri */
+.galeri {
+  /* padding: 80px 10%; */
+  text-align: center;
+  /* background-color: red; */
+}
+
+.heading h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.heading p {
+  /* font-size: 20px; */
+  color: #444;
+  margin-bottom: 40px;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  /* background-color: blue; */
+}
+
+.gallery-item {
+  width: 400px;
+  height: 230px;
+  overflow: hidden;
+  border-radius: 14px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+/* HOVER */
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+.btn-gallery {
+  display: inline-flex;
+  align-items: center;
+
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  font-weight: 500;
+
+  transition: all 0.3s ease;
+}
+
+.btn-gallery span {
+  font-size: 22px;
+}
+
+.btn-gallery:hover {
+  transform: translateY(-3px);
+}
+
+/* ppdb */
+.ppdb {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.ppdb-content {
+  background-color: green;
+  width: 70%;
+  margin: auto;
+  padding: 40px 80px;
+  border-radius: 10px;
+  color: white;
+}
+
+.ppdb-content h1 {
+  /* font-size: 24px; */
+}
+
+.ppdb-content a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 5px 10px;
+}
+
+.ppdb-content p {
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
 @media (max-width: 768px) {
   .slider-counter {
     left: 15px;
@@ -672,6 +869,16 @@
 
   .smart-school .contain .card p {
     font-size: 8px;
+  }
+
+  .list-ekstrakulikuler .card:last-child {
+    grid-column: span 1;
+    width: 100%;
+  }
+
+  .gallery-item {
+    width: 90%;
+    background-color: red;
   }
 }
 
@@ -729,6 +936,10 @@
 
   .news-list .news-card {
     margin-top: 10px;
+  }
+
+  .list-ekstrakulikuler {
+    grid-template-columns: 1fr;
   }
 }
 

@@ -1,9 +1,5 @@
 /* --- Aturan Container --- */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+
 
 /* --- Hero Banner Berita --- */
 .hero-berita {
@@ -23,6 +19,8 @@
 }
 
 .hero-content {
+    padding-left: 40px;
+    padding-right: 20px;
     position: relative;
     z-index: 2;
     color: white;

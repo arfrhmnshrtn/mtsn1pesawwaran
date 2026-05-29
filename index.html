@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./src/css/navbar.css" />
     <link rel="stylesheet" href="./src/css/index.css" />
+    <link rel="stylesheet" href="./src/css/footer.css">
+
+    <!-- logo -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.mtsn1pesawaran.sch.id/assets/images/logo.png"
+    />
+
+    <!-- tailwind -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
 
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -49,7 +60,11 @@
             <ul>
               <li><a href="index.html">Beranda</a></li>
               <div class="dropdown">
+<<<<<<< HEAD
                 <li><a href="#profil">Profil</a></li>
+=======
+                <li><a href="profil.html">Profil</a></li>
+>>>>>>> 840788568c5936aa5b21f110a104d94f948d424f
                 <div class="dropdown-content">
                   <a href="#profil">Sejarah</a>
                   <a href="#profil">Visi & Misi</a>
@@ -61,12 +76,12 @@
                 <li><a href="berita.html">Berita</a></li>
                 <div class="dropdown-content">
                   <a href="berita.html">Berita</a>
-                  <a href="#">Pengumuman</a>
-                  <a href="#">Ekstrakurikuler</a>
-                  <a href="#">Prestasi</a>
-                  <a href="#">Kurikulum</a>
-                  <a href="#">Kalender Pendidikan</a>
-                  <a href="#">Jadwal Pembelajaran</a>
+                  <a href="pengumuman.html">Pengumuman</a>
+                  <a href="ekstrakurikuler.html">Ekstrakurikuler</a>
+                  <a href="prestasi.html">Prestasi</a>
+                  <a href="kurikulum.html">Kurikulum</a>
+                  <a href="kalender_pendidikan.html">Kalender Pendidikan</a>
+                  <a href="jadwal_pembelajaran.html">Jadwal Pembelajaran</a>
                 </div>
               </div>
               <div class="dropdown">
@@ -200,7 +215,6 @@
 
       <!-- prestasi -->
       <div class="section-wrapper">
-        <!-- PRESTASI -->
         <div class="achievement-section">
           <h1 class="section-title" data-aos="fade-down">Prestasi Terbaru</h1>
 
@@ -254,7 +268,6 @@
           </div>
         </div>
 
-        <!-- PENGUMUMAN -->
         <div class="announcement-section">
           <h1 class="section-title" data-aos="fade-down">Pengumuman Terbaru</h1>
 
@@ -286,7 +299,6 @@
               </div>
             </div>
 
-            <!-- ITEM -->
             <div class="announcement-card">
               <div class="announcement-date">
                 <div class="corner"></div>
@@ -308,7 +320,6 @@
               </div>
             </div>
 
-            <!-- ITEM -->
             <div class="announcement-card">
               <div class="announcement-date">
                 <div class="corner"></div>
@@ -399,9 +410,107 @@
         </div>
       </div>
       <!-- akhir berita -->
+
+      <!-- ekstrakurikuler -->
+      <div class="container-ekstrakulikuler">
+        <div class="head-ekstrakulikuler">
+          <h3>Ekstrakurikuler</h3>
+          <p>
+            Kegiatan non-pelajaran formal yang dilakukan peserta didik sekolah
+            MTS Negeri 1 Pesawaran.
+          </p>
+        </div>
+        <div class="list-ekstrakulikuler">
+          <div class="card">
+            <div class="img">
+              <img src="./src/img/ekstrakurikuler1.jpeg" alt="" />
+            </div>
+            <div class="content-ekstrakulikuler">
+              <h4>Ektrakurikuler Volly Ball</h4>
+              <p>Volly Ball.</p>
+              <a href="">Selengkapnya →</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./src/img/ekstrakurikuler2.jpg" alt="" />
+            </div>
+            <div class="content-ekstrakulikuler">
+              <h4>Ekstrakulikuler Futsal Primavera Putra</h4>
+              <p>Ekstrakulikuler Futsal</p>
+              <a href="">Selengkapnya →</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./src/img/ekstrakurikuler3.jpeg" alt="" />
+            </div>
+            <div class="content-ekstrakulikuler">
+              <h4>Futsal Putri</h4>
+              <p>
+                Olahraga ini dimainkan oleh dua tim yang masing-masing
+                beranggotakan 5 (sebelas) pemain inti dan beberapa pemain
+                cadangan
+              </p>
+              <a href="">Selengkapnya →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- akhir ekstrakurikuler -->
+
+      <!-- galeri -->
+      <section class="galeri">
+        <div class="heading">
+          <h1>Galeri</h1>
+          <p>Dokumentasi kegiatan mengenai MTS Negeri 1 Pesawaran</p>
+        </div>
+
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="./src/img/galeri1.jpg" alt="" />
+          </div>
+
+          <div class="gallery-item active">
+            <img src="./src/img/galeri2.jpeg" alt="" />
+          </div>
+
+          <div class="gallery-item">
+            <img src="./src/img/galeri1.jpg" alt="" />
+          </div>
+        </div>
+
+        <a href="" class="btn-gallery">
+          Lihat lainnya
+          <span>↗</span>
+        </a>
+      </section>
+      <!-- akhir galeri -->
+
+      <!-- banner penerimaan peserta didik baru -->
+       <section class="ppdb">
+        <div class="ppdb-content">
+          <h1>Penerimaan Peserta Didik Baru</h1>
+          <p>
+            Sistem layanan online yang disediakan dalam rangka
+memudahkan proses pendaftaran masuk sekolah bagi peserta didik baru.
+          </p>
+          <a href="">Daftar disini</a>
+       </section>
+      <!-- akhir banner penerimaan peserta didik baru -->
+
+
+      <!-- footer -->
+       <div id="footer">
+
+       </div>
+      <!-- akhir footer -->
+
     </main>
 
     <!-- js -->
+
+
     <script src="./src/js/index.js"></script>
 
     <!-- aos -->
@@ -411,6 +520,14 @@
         duration: 1500,
         once: false,
       });
+
+      fetch("./src/components/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading footer:", error));
     </script>
+
   </body>
 </html>

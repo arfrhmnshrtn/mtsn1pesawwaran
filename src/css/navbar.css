@@ -37,12 +37,23 @@
   width: 60px;
   height: 53px;
   margin-right: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-container.sticky .logo img {
+  width: 70px;
+  height: 60px;
 }
 
 .navbar-container .text {
   line-height: 1.1;
   font-weight: bold;
   color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-container.sticky .text {
+  font-size: 8px;
 }
 
 .navbar-container .text h1 {

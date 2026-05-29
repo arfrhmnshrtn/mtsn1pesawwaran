@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurikulum - MTsN 1 Pesawaran</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./src/css/navbar.css" />
+    <link rel="stylesheet" href="./src/css/berita.css" />
+    <link rel="stylesheet" href="./src/css/kurikulum.css" />
+    <link rel="stylesheet" href="./src/css/footer.css" 
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+    <main>
+        <!-- NAVBAR -->
+        <header>
+            <div class="container navbar-container">
+                <div class="logo-container">
+                    <div class="logo">
+                        <img src="https://www.mtsn1pesawaran.sch.id/assets/images/logo.png" alt=""/>
+                        <div class="text">
+                            <h1>MTS Negri 1</h1>
+                            <h1>Pesawaran</h1>
+                        </div>
+                    </div>
+                    <div id="humberger-menu"><i class="fas fa-bars"></i></div>
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <div class="dropdown">
+                            <li><a href="#">Profil</a></li>
+                            <div class="dropdown-content">
+                                <a href="#">Sejarah</a>
+                                <a href="#">Visi & Misi</a>
+                                <a href="#">Struktur Organisasi</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <li><a href="berita.html">Berita</a></li>
+                            <div class="dropdown-content">
+                                <a href="berita.html">Berita</a>
+                                <a href="pengumuman.html">Pengumuman</a>
+                                <a href="ekstrakurikuler.html">Ekstrakurikuler</a>
+                                <a href="prestasi.html">Prestasi</a>
+                                <a href="kurikulum.html">Kurikulum</a>
+                                <a href="kalender_pendidikan.html">Kalender Pendidikan</a>
+                                <a href="jadwal_pembelajaran.html">Jadwal Pembelajaran</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <li><a href="#">Sertifikasi Akreditasi</a></li>
+                            <div class="dropdown-content">
+                                <a href="https://drive.google.com/file/d/1xxnYGVyeWu2U4i3UZnrBHEpFYEshY3aA/view?usp=sharing">S.A. 2019-2024</a>
+                                <a href="https://drive.google.com/file/d/12yPRJ8OxWpkmpJR3eQBqy7cBieBxNZf5/view?usp=sharing">S.A. 2024-2029</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <li><a href="#">Galeri</a></li>
+                            <div class="dropdown-content">
+                                <a href="#">Foto</a>
+                                <a href="#">Video</a>
+                            </div>
+                        </div>
+                        <li><a href="#">PPDB</a></li>
+                        <li><a href="#">Kontak</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        
+        <!-- HERO -->
+        <section class="hero-berita">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="page-title">Kurikulum</h1>
+                <p class="breadcrumb">Home / Kurikulum</p>
+            </div>
+        </section>
+
+        <!-- TABEL KURIKULUM -->
+        <section class="container kurikulum-section">
+            <div class="dt-container">
+                
+                <div class="dt-top">
+                    <div class="dt-length">
+                        Tampilkan 
+                        <select>
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select> 
+                        entri
+                    </div>
+                    <div class="dt-search">
+                        Cari: <input type="text">
+                    </div>
+                </div>
+
+                <table class="dt-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 80%;">Title <i class="fas fa-sort sort-icon"></i></th>
+                            <th style="width: 20%;">Actions <i class="fas fa-sort sort-icon"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kurikulum Merdeka 2023</td>
+                            <td>
+                                <a href="#" class="btn-lihat"><i class="fas fa-eye"></i> Lihat</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="dt-bottom">
+                    <div class="dt-info">
+                        Menampilkan 1 sampai 1 dari 1 entri
+                    </div>
+                    <div class="dt-pagination">
+                        <a href="#" class="paginate_button previous disabled">Sebelumnya</a>
+                        <a href="#" class="paginate_button current">1</a>
+                        <a href="#" class="paginate_button next disabled">Selanjutnya</a>
+                    </div>
+                </div>
+
+                <div class="share-widgets">
+                    <a href="#" class="share-btn fb"><i class="fab fa-facebook-f"></i> Share</a>
+                    <a href="#" class="share-btn tw"><i class="fab fa-twitter"></i> Tweet</a>
+                    <a href="#" class="share-btn wa"><i class="fab fa-whatsapp"></i> Share</a>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+            <div class="logo">
+                <img src="https://www.mtsn1pesawaran.sch.id/assets/images/logo.png" alt="Logo MTsN 1 Pesawaran" />
+                <div class="text">
+                <h1>MTS NEGERI 1</h1>
+                <h1 class="green-text">PESAWARAN</h1>
+                </div>
+            </div>
+            <p>Website Resmi MTsN 1 Pesawaran</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            </div>
+
+            <div class="footer-menu">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="#">Profil</a></li>
+                <li><a href="#">Berita</a></li>
+                <li><a href="#">Sertifikat Akreditasi</a></li>
+                <li><a href="galeri.html" class="active">Galeri</a></li>
+                <li><a href="#">PPDB</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-contact">
+            <h3>Kontak Kami</h3>
+            <ul>
+                <li><i class="fas fa-phone"></i> (0729)</li>
+                <li><i class="fas fa-envelope"></i> admin@mtsn1pesawaran.sch.id</li>
+                <li><i class="fas fa-map-marker-alt"></i> Jalan Pesawaran</li>
+            </ul>
+            </div>
+        </div>
+        </div>
+        </footer>
+        <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2024 MTsN 1 Pesawaran</p>
+        </div>
+        </div>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+
+    <script>
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
