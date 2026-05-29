@@ -275,13 +275,14 @@
   position: absolute;
   inset: 0;
 
-  background: rgba(255, 255, 255, 0.7); /* opacity */
+  background: rgba(255, 255, 255, 0.7);
+  /* opacity */
 
   z-index: 1;
 }
 
 /* content di atas overlay */
-.smart-school > * {
+.smart-school>* {
   position: relative;
   z-index: 2;
 }
@@ -565,7 +566,7 @@
   margin: 80px auto;
 }
 
-.news section p {
+.news-section p {
   font-size: 14px;
   color: #333;
   margin-bottom: 20px;
@@ -663,10 +664,12 @@
   .smart-school {
     padding: 50px 20px;
   }
+
   .smart-school .contain .card {
     width: 100%;
     margin: 10px;
   }
+
   .smart-school .contain .card p {
     font-size: 8px;
   }

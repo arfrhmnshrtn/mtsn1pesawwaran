@@ -29,12 +29,14 @@
   position: relative;
   z-index: 1  ;
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 60px;
+  margin-left: -60px;
 }
 
 .footer-info {
-  flex: 1.5;
+  flex: 0.7;
 }
 
 .footer-info .logo {
@@ -81,13 +83,13 @@
 }
 
 .footer-menu, .footer-contact {
-  flex: 1;
+  flex: 0;
 }
 
 .footer-menu h3, .footer-contact h3 {
   font-size: 22px;
   color: #069203;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   position: relative;
 }
 
@@ -97,8 +99,8 @@
 }
 
 .footer-menu ul li, .footer-contact ul li {
-  margin-bottom: 10px;
-  font-size: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
   display: flex;
   align-items: center;
   gap: 5px; 

@@ -1,6 +1,6 @@
 .navbar-container {
   /* max-width: 1200px; */
-  padding: 10px 150px;
+  padding: 10px 80px;
 
   position: fixed;
   top: 0;
@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 9999;
+  z-index: 999;
   transition: all 0.3s ease;
   /* background-color: red; */
 }
@@ -34,16 +34,20 @@
   justify-content: center;
 }
 .navbar-container .logo img {
-  width: 80px;
-  height: 70px;
+  width: 60px;
+  height: 53px;
   margin-right: 10px;
 }
 
 .navbar-container .text {
-  font-size: 10px;
-  line-height: 1;
+  line-height: 1.1;
   font-weight: bold;
   color: white;
+}
+
+.navbar-container .text h1 {
+  font-size: 14px;
+  margin: 0;
 }
 
 .navbar-container .nav-links ul {
@@ -70,9 +74,6 @@
 
 .navbar-container .nav-links ul .dropdown {
   position: relative;
-}
-
-.navbar-container .nav-links ul .dropdown {
   background-color: transparent;
   border: none;
   color: black;
@@ -166,7 +167,7 @@
   .navbar-container .logo {
     display: flex;
     width: 100%;
-    justify-content: left;
+    justify-content: flex-start;
   }
 
   #humberger-menu {

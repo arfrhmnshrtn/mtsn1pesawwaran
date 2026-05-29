@@ -1,218 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Galeri - MTsN 1 Pesawaran</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./src/css/navbar.css" />
-    <link rel="stylesheet" href="./src/css/video.css" />
-    <link rel="stylesheet" href="./src/css/footer.css" />
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container navbar-container">
-        <div class="logo-container">
-          <div class="logo">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Galeri Video - MTsN 1 Pesawaran</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./src/css/navbar.css" />
+  <link rel="stylesheet" href="./src/css/video.css" />
+  <link rel="stylesheet" href="./src/css/footer.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <!-- LightGallery -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-zoom.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-thumbnail.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-video.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-autoplay.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-share.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-rotate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-fullscreen.min.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container navbar-container">
+
+      <div class="logo-container">
+        <div class="logo">
+          <img
+            src="https://www.mtsn1pesawaran.sch.id/assets/images/logo.png"
+            alt="Logo MTsN 1 Pesawaran"
+          />
+
+          <div class="text">
+            <h1>MTS NEGERI 1</h1>
+            <h1>PESAWARAN</h1>
+          </div>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+
+          <li class="dropdown">
+            <a href="index.html#profil">Profil</a>
+
+            <div class="dropdown-content">
+              <a href="index.html#profil">Sejarah</a>
+              <a href="index.html#profil">Visi & Misi</a>
+              <a href="index.html#profil">Struktur Organisasi</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="berita.html">Berita</a>
+
+            <div class="dropdown-content">
+              <a href="berita.html">Berita</a>
+              <a href="#">Pengumuman</a>
+              <a href="#">Ekstrakurikuler</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">Sertifikat Akreditasi</a>
+
+            <div class="dropdown-content">
+              <a href="https://drive.google.com/file/d/1xxnYGVyeWu2U4i3UZnrBHEpFYEshY3aA/view?usp=sharing">S.A. 2019-2024</a>
+              <a href="https://drive.google.com/file/d/12yPRJ8OxWpkmpJR3eQBqy7cBieBxNZf5/view?usp=sharing">S.A. 2024-2029</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="galeri.html" class="active">Galeri</a>
+
+            <div class="dropdown-content">
+              <a href="galeri.html">Foto</a>
+              <a href="video.html">Video</a>
+            </div>
+          </li>
+
+          <li><a href="ppdb.html">PPDB</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- HERO -->
+    <section class="hero-video">
+      <div class="container">
+
+        <div class="hero-content">
+          <h1>Galeri Video</h1>
+
+          <div class="breadcrumb">
+            <a href="index.html">Home</a> /
+            <span>Galeri</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VIDEO CONTENT -->
+    <section class="video-content">
+
+      <div class="video-grid">
+
+        <!-- VIDEO 1 -->
+        <div class="video-item">
+
+          <a href="https://www.youtube.com/watch?v=I3FlAbcGOUA"
+             class="gallery-item">
+
             <img
-              src="https://www.mtsn1pesawaran.sch.id/assets/images/logo.png"
-              alt="Logo MTsN 1 Pesawaran"
-            />
-            <div class="text">
-              <h1>MTS NEGERI 1</h1>
-              <h1>PESAWARAN</h1>
-            </div>
-          </div>
+              src="https://img.youtube.com/vi/I3FlAbcGOUA/maxresdefault.jpg"
+              alt="Video Profil">
+
+          </a>
+
         </div>
 
-        <nav class="nav-links">
-          <ul>
-            <li><a href="index.html">Beranda</a></li>
-            <li class="dropdown">
-              <a href="#">Profil</a>
-              <div class="dropdown-content">
-                <a href="#">Sejarah</a>
-                <a href="#">Visi & Misi</a>
-                <a href="#">Struktur Organisasi</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <a href="#">Berita</a>
-              <div class="dropdown-content">
-                <a href="#">Berita</a>
-                <a href="#">Pengumuman</a>
-                <a href="#">Ekstrakurikuler</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <a href="#">Sertifikat Akreditasi</a>
-              <div class="dropdown-content">
-                <a href="#">S.A. 2019-2024</a>
-                <a href="#">S.A. 2024-2029</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="active">Galeri</a>
-              <div class="dropdown-content">
-                <a href="galeri.html">Foto</a>
-                <a href="video.html">Video</a>
-              </div>
-            </li>
-            <li><a href="ppdb.html">PPDB</a></li>
-            <li><a href="kontak.html">Kontak</a></li>
-          </ul>
-        </nav>
+       <!-- VIDEO 2 -->
+<div class="video-item">
+
+  <a href="https://www.youtube.com/watch?v=qjjzz1oETpI"
+     class="gallery-item">
+
+    <img
+      src="https://img.youtube.com/vi/qjjzz1oETpI/maxresdefault.jpg"
+      alt="Selaksa Pemikat">
+
+  </a>
+
+</div>
+        <!-- VIDEO 3 -->
+<div class="video-item">
+
+  <a href="https://www.youtube.com/watch?v=pojKLwHXDBY"
+     class="gallery-item">
+
+    <img
+      src="https://img.youtube.com/vi/pojKLwHXDBY/maxresdefault.jpg"
+      alt="Kegiatan">
+
+  </a>
+
+</div>
+
+    <!-- VIDEO 4 -->
+<div class="video-item">
+
+  <a href="https://www.youtube.com/watch?v=uPJkYwImOg8"
+     class="gallery-item">
+
+    <img
+      src="https://img.youtube.com/vi/uPJkYwImOg8/maxresdefault.jpg"
+      alt="Acara">
+
+  </a>
+
+</div>
+
+        <!-- VIDEO 5 -->
+        <div class="video-item">
+
+          <a href="https://www.youtube.com/watch?v=Xh07T14vB3Q"
+             class="gallery-item">
+
+            <img
+              src="https://img.youtube.com/vi/Xh07T14vB3Q/maxresdefault.jpg"
+              alt="Inovasi">
+
+          </a>
+
+        </div>
+
+        <!-- VIDEO 6 -->
+        <div class="video-item">
+
+          <a href="https://www.youtube.com/watch?v=p1pXk4v2K4k"
+             class="gallery-item">
+
+            <img
+              src="https://img.youtube.com/vi/p1pXk4v2K4k/maxresdefault.jpg"
+              alt="Sekolah">
+
+          </a>
+
+        </div>
+
       </div>
-    </header>
 
-    <main>
-      <section class="hero-video">
-        <div class="container">
-          <div class="hero-content">
-            <h1>Galeri Video</h1>
-            <div class="breadcrumb">
-              <a href="index.html">Home</a> / <span>Galeri</span>
-            </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container footer-container">
+
+      <div class="footer-info">
+
+        <div class="logo">
+          <img
+            src="https://www.mtsn1pesawaran.sch.id/assets/images/logo.png"
+            alt="Logo MTsN 1 Pesawaran" />
+
+          <div class="text">
+            <h1>MTS NEGERI 1</h1>
+            <h1 class="green-text">PESAWARAN</h1>
           </div>
         </div>
-      </section>
 
-      <section class="video-content">
-        <div class="container">
-          <div class="video-grid">
-            <!-- Video Item 1 -->
-            <div class="video-item">
-              <div class="video-wrapper">
-                <iframe 
-                  src="https://www.youtube-nocookie.com/embed/I3FlAbcGOUA" 
-                  title="Video Profil" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen>
-                </iframe>
-              </div>
-            </div>
+        <p>Website Resmi MTsN 1 Pesawaran</p>
 
-            <!-- Video Item 2 -->
-            <div class="video-item">
-              <div class="video-wrapper">
-                <iframe 
-                  src="https://www.youtube-nocookie.com/embed/Xh07T14vB3Q" 
-                  title="Selaksa Pemikat" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen>
-                </iframe>
-              </div>
-            </div>
-
-            <!-- Video Item 3 -->
-            <div class="video-item">
-              <div class="video-wrapper">
-                <iframe 
-                  src="https://www.youtube-nocookie.com/embed/8vB8oT1Zz5k" 
-                  title="Kegiatan" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen>
-                </iframe>
-              </div>
-            </div>
-
-            <!-- Video Item 4 -->
-            <div class="video-item">
-              <div class="video-wrapper">
-                <iframe 
-                  src="https://www.youtube-nocookie.com/embed/v9qI9X6_rXw" 
-                  title="Acara" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen>
-                </iframe>
-              </div>
-            </div>
-
-            <!-- Video Item 5 -->
-            <div class="video-item">
-              <div class="video-wrapper">
-                <iframe 
-                  src="https://www.youtube-nocookie.com/embed/Xh07T14vB3Q" 
-                  title="Inovasi" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen>
-                </iframe>
-              </div>
-            </div>
-
-            <!-- Video Item 6 -->
-            <div class="video-item">
-              <div class="video-wrapper">
-                <iframe 
-                  src="https://www.youtube-nocookie.com/embed/p1pXk4v2K4k" 
-                  title="Sekolah" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen>
-                </iframe>
-              </div>
-            </div>
-          </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-twitter-square"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
-      </section>
 
-      <footer class="footer">
-        <div class="container footer-container">
-          <div class="footer-info">
-            <div class="logo">
-              <img src="https://www.mtsn1pesawaran.sch.id/assets/images/logo.png" alt="Logo MTsN 1 Pesawaran" />
-              <div class="text">
-                <h1>MTS NEGERI 1</h1>
-                <h1 class="green-text">PESAWARAN</h1>
-              </div>
-            </div>
-            <p>Website Resmi MTsN 1 Pesawaran</p>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook-square"></i></a>
-              <a href="#"><i class="fab fa-twitter-square"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-whatsapp"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-          </div>
-
-          <div class="footer-menu">
-            <h3>Menu</h3>
-            <ul>
-              <li><a href="index.html">Beranda</a></li>
-              <li><a href="#">Profil</a></li>
-              <li><a href="#">Berita</a></li>
-              <li><a href="#">Sertifikat Akreditasi</a></li>
-              <li><a href="galeri.html" class="active">Galeri</a></li>
-              <li><a href="ppdb.html">PPDB</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-contact">
-            <h3>Kontak Kami</h3>
-            <ul>
-              <li><i class="fas fa-phone"></i> (0729)</li>
-              <li><i class="fas fa-envelope"></i> admin@mtsn1pesawaran.sch.id</li>
-              <li><i class="fas fa-map-marker-alt"></i> Jalan Pesawaran</li>
-            </ul>
-          </div>
-        </div>
-      </footer>
-      <div class="footer-bottom">
-        <div class="container">
-          <p>&copy; 2024 MTsN 1 Pesawaran</p>
-        </div>
       </div>
-    </main>
 
-    <script src="./src/js/index.js"></script>
+      <div class="footer-menu">
 
-  </body>
+        <h3>Menu</h3>
+
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="index.html#profil">Profil</a></li>
+          <li><a href="berita.html">Berita</a></li>
+          <li><a href="galeri.html" class="active">Galeri</a></li>
+          <li><a href="ppdb.html">PPDB</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+
+      </div>
+
+      <div class="footer-contact">
+
+        <h3>Kontak Kami</h3>
+
+        <ul>
+          <li><i class="fas fa-phone"></i> (0729)</li>
+          <li><i class="fas fa-envelope"></i> admin@mtsn1pesawaran.sch.id</li>
+          <li><i class="fas fa-map-marker-alt"></i> Jalan Pesawaran</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- FOOTER BOTTOM -->
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 MTsN 1 Pesawaran</p>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script src="./src/js/index.js"></script>
+
+  <!-- LIGHTGALLERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/video/lg-video.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/autoplay/lg-autoplay.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/share/lg-share.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/rotate/lg-rotate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/fullscreen/lg-fullscreen.min.js"></script>
+
+  <script>
+    const videoGrid = document.querySelector('.video-grid');
+    lightGallery(videoGrid, {
+      plugins: [lgZoom, lgThumbnail, lgVideo, lgAutoplay, lgShare, lgRotate, lgFullscreen],
+      selector: '.gallery-item',
+      speed: 500,
+      thumbnail: true,
+      gotoNextSlideOnVideoEnd: true,
+      hideBarsDelay: 3500,
+      videoMaxWidth: '100%',
+      getCaptionFromTitleOrAlt: false,
+      thumbWidth: 160,
+      thumbHeight: 106,
+      thumbMargin: 10
+    });
+  </script>
+  
+  
+
+</body>
 </html>

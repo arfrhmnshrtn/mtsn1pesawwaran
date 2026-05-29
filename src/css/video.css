@@ -1,11 +1,12 @@
+
 .hero-video {
   position: relative;
-  height: 300px;
+  height: 250px;
   background: url("../img/bg-galeri.png") center/cover no-repeat;
   display: flex;
   align-items: center;
   color: white;
-  padding-top: 150px; 
+  padding-top: 150px;
 }
 
 .hero-video::before {
@@ -18,34 +19,28 @@
 .hero-video .container {
   position: relative;
   z-index: 10;
-  padding: 0 5%;
+  padding: 0 80px;
 }
 
 .hero-video h1 {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 600;
   margin-bottom: 5px;
-  position: relative;
 }
 
 .hero-video .breadcrumb {
   font-size: 15px;
-  font-weight: 400;
 }
 
 .hero-video .breadcrumb a {
   color: white;
   text-decoration: none;
-  position: relative;
 }
 
-.hero-video .breadcrumb span {
-  color: #ccc;
-}
 
 .video-content {
   padding: 60px;
-  background-color: #fff;
+  background-color: white;
 }
 
 .video-grid {
@@ -55,29 +50,44 @@
 }
 
 .video-item {
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  aspect-ratio: 16 / 9;
-}
-
-.video-item:hover {
-  transform: scale(1.02);
-}
-
-.video-wrapper {
   position: relative;
-  width: 100%;
-  height: 100%;
+  overflow: hidden;
+  background: #000;
+  aspect-ratio: 16 / 9;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
+.video-item img {
   width: 100%;
   height: 100%;
-  border: 0;
+  object-fit: cover;
+  display: block;
+}
+
+.video-item a {
+  text-decoration: none;
+  display: block;
+}
+
+
+.lg-toolbar .lg-icon {
+  font-size: 28px !important;
+}
+
+.lg-counter {
+  font-size: 18px !important;
+}
+
+
+.lg-outer.lg-hide-items .lg-thumb-outer {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+}
+
+.lg-outer .lg-thumb-outer {
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 @media (max-width: 1024px) {
@@ -87,16 +97,22 @@
 }
 
 @media (max-width: 600px) {
-  .video-grid {
-    grid-template-columns: 1fr;
-  }
-  
+
   .hero-video {
-    height: 250px;
+    height: 220px;
     padding-top: 80px;
+  }
+
+  .hero-video .container {
+    padding: 0 20px;
   }
 
   .video-content {
     padding: 40px 20px;
   }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
 }
